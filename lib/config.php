@@ -5,11 +5,21 @@
 
 // Headers
 // header, header-top-navbar, header-top-navbar-right
-$header_template_name = 'header-top-navbar';
+$header_template_name = 'header';
 
 // Footers
 // footer, footer-bootstrap-sticky
 $footer_template_name = 'footer';
+
+// Products
+// right
+$product_template_name = '';
+
+// Posts
+$post_template_name = '';
+
+// Home
+$home_template_name = '';
 
 // Others
 add_theme_support('root-relative-urls');    // Enable relative URLs
@@ -29,7 +39,7 @@ define('POST_EXCERPT_LENGTH', 40); // Length in words for excerpt_length filter 
 function roots_main_class() {
   if (roots_display_sidebar()) {
     // Classes on pages with the sidebar
-    $class = 'col-sm-8';
+    $class = 'col-sm-10';
   } else {
     // Classes on full width pages
     $class = 'col-sm-12';
@@ -42,7 +52,7 @@ function roots_main_class() {
  * .sidebar classes
  */
 function roots_sidebar_class() {
-  return 'col-sm-4';
+  return 'col-sm-2';
 }
 
 /**
