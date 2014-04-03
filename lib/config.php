@@ -5,7 +5,7 @@
 
 // Headers
 // header, header-top-navbar, header-top-navbar-right
-$header_template_name = 'header';
+$header_template_name = 'header-vinila';
 
 // Footers
 // footer, footer-bootstrap-sticky
