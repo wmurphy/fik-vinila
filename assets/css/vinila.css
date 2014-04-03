@@ -1,0 +1,262 @@
+/*Css*/
+/*
+#ab2d2a rojo
+#d7d2c5 marron
+*/
+body *{
+	color: #ab2d2a;
+}
+.main{
+	background:#fff; 
+}
+footer *{
+	color: #ab2d2a;
+}
+.no-padding{
+	padding: 0;
+}
+.no-padding-right{
+	padding-right: 0;
+}
+.no-padding-left{
+	padding-left: 0;
+}
+.logovinila{
+	margin: 20px 0;
+}
+.nav li a:hover, .nav li a:active, .nav li a:focus{
+	background: transparent;
+}
+.nav.lang{
+	float: right;
+}
+.nav.lang li{
+	display: inline;
+	float: left;
+	width: auto;
+	text-transform: uppercase;
+}
+.nav.lang li a{
+	padding:5px;
+}
+.nav.lang li a:hover{
+	color: #d7d2c5;
+}
+.nav.bag{
+	float: right;
+}
+.headercont{
+	margin: 0 auto;
+}
+.menuprin{
+	background: #ab2d2a;
+}
+.menuprin nav *{
+	color: white;
+}
+.menuprin nav ul{
+	width: 540px;
+	margin: 0 auto;
+}
+.menuprin nav ul li a{
+	text-transform: uppercase;
+	margin: 0 20px;
+}
+.menuprin nav ul li a:hover{
+	background: transparent;
+	color: #d7d2c5;
+}
+
+.bolsa .menu-bag li{
+	float: right;
+}
+.bolsa .menu-bag li a{
+	padding-right: 35px;
+	text-transform: uppercase;
+	background: url('../img/bag.jpg') scroll no-repeat right 0 transparent;
+}
+.bolsa .menu-bag li a:hover{
+	color: #d7d2c5;
+}
+.caret{
+	display: none;
+}
+.nav > li > a:hover, .nav > li > a:focus{
+	background-color: transparent;
+}
+.nav > li > a:hover, .nav > li > .dropdown-toggle:focus{
+	background-color: transparent;
+}
+.dropdown-menu{
+	background: transparent;
+	border-radius: 0;
+	border: none;
+	box-shadow: none;
+}
+.nav-pills .dropdown-menu{
+    width: 160px;
+    background: transparent;
+    padding-top: 2px;
+}
+.nav-pills .dropdown-menu li{
+	background: rgba(171,45,42, 0.7);
+	width: 100%;
+	margin: 2px 0;
+	text-align: center;
+}
+.nav-pills .dropdown-menu li a{
+	color: #fff;
+	text-transform: lowercase;
+}
+.nav-pills .dropdown-menu li a:first-letter{
+	text-transform: uppercase;
+}
+/*HOME SUBHEADER*/
+.gallery img{
+	width: 100%;
+}
+/*HOME CONTENT*/
+.element{
+	display: inline-block;
+	text-align: center;
+	height: 360px;
+	margin: 50px 0;
+}
+.element a{
+	font-size: 64px;
+    font-weight: bold;
+    background: rgba(215,210,197, 0.4);
+    display: block;
+    margin-top: 97px;
+    padding: 38px 0;
+}
+.element a:hover, .element a:active, .element a:focus{
+	color: #d7d2c5;
+	text-decoration: none;
+}
+.izq *{
+	text-transform: uppercase;
+}
+.izq{
+	background: url('../img/prueba1.jpg') scroll no-repeat 0 0 transparent;
+}
+.dcha{
+	background: url('../img/prueba2.jpg') scroll no-repeat 0 0 transparent;
+}
+.dcha a{
+	padding: 15px 15px;
+	line-height: 66px;
+}
+/*footer*/
+footer *{
+	font-size: 12px;
+}
+footer{
+	background: #d7d2c5; /*marron del pie*/
+}
+.f-menu{
+	background: whitesmoke;
+}
+.nav.f-menu{
+	background: transparent;
+	padding-top: 15px;
+}
+.nav.f-menu li{
+	display: inline;
+    float: left;
+    width: auto;
+    text-transform: uppercase;
+}
+
+/*SOCIAL*/
+.nav li{
+	float: left;
+}
+footer .nav.f-menu > li > a{
+	padding: 10px 24px;
+}
+footer .nav.f-menu > li > a:hover{
+	color: grey;
+}
+.copyr{
+	margin-top: 70px;
+}
+footer form{
+	background: #ab2d2a;
+	margin-top: 20px;
+	width: 350px;
+	height: 40px;
+}
+footer form input{
+	margin-top: 3px;
+	height: 32px;
+	width: 200px;
+}
+footer form input.button{
+	width: 137px;
+	color: #fff;
+	background: transparent;
+	border: none;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.social{
+	padding-top: 7px;
+	margin-bottom: 30px;
+}
+.social p{
+	text-transform: uppercase;
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+.social li{
+	width: 39px;
+	margin-right: 15px;
+}
+.social li a{
+	background:url('../img/social.png') scroll no-repeat 0 0 transparent;
+	text-indent: -99000px;
+	overflow: hidden;
+	background-position: -136px 0;
+    height: 40px;
+    padding: 0;
+    width: 39px;
+}
+.social li a:hover{	
+	background:url('../img/social.png') scroll no-repeat 0 0 transparent;
+	height: 40px;
+	border-radius: 0;
+}
+.social .face a{
+	background-position:0px 0;
+}
+.social .twitter{
+	background-position:-136px 0;
+}
+.social .instagram a{
+	background-position:-46px 0;
+}
+.social .pinterest a{
+	background-position:-91px 0;
+}
+.social .gplus a{
+	background-position:-181px 0;
+}
+
+
+.social .face a:hover{
+	background-position:0px -44px;
+}
+.social .twitter a:hover{
+	background-position:-136px -44px ;
+}
+.social .instagram a:hover{
+	background-position:-46px -44px;
+}
+.social .pinterest a:hover{
+	background-position:-91px -44px;
+}
+.social .gplus a:hover{
+	background-position:-181px -44px;
+}
+
