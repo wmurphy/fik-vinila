@@ -39,9 +39,6 @@ footer *{
 .nav.lang li a{
 	padding:5px;
 }
-.nav.lang li a:hover{
-	color: #d7d2c5;
-}
 .nav.bag{
 	float: right;
 }
@@ -75,8 +72,9 @@ footer *{
 	text-transform: uppercase;
 	background: url('../img/bag.jpg') scroll no-repeat right 0 transparent;
 }
-.bolsa .menu-bag li a:hover{
-	color: #d7d2c5;
+.bolsa .menu-bag li a:hover, .lang li a:hover, .f-menu li a:hover{
+	text-decoration: underline;
+	color: #ab2d2a;
 }
 .caret{
 	display: none;
@@ -110,6 +108,19 @@ footer *{
 }
 .nav-pills .dropdown-menu li a:first-letter{
 	text-transform: uppercase;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus{
+	background: none;
+}
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:focus{
+	background: #ab2d2a;
+	margin: 0;
+}
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{
+	background: #ab2d2a;
+	background: rgba(171,45,42, 0.7);
+	margin: 0;
+	color: #d7d2c5;
 }
 /*HOME SUBHEADER*/
 .gallery img{
@@ -174,9 +185,6 @@ footer{
 }
 footer .nav.f-menu > li > a{
 	padding: 10px 24px;
-}
-footer .nav.f-menu > li > a:hover{
-	color: grey;
 }
 .copyr{
 	margin-top: 70px;
