@@ -3,6 +3,13 @@
 #ab2d2a rojo
 #d7d2c5 marron
 */
+@font-face {
+  font-family: 'Leelawadee Bold';
+  /*src: url('../fonts/leelawdb.eot'); *//* IE9 Compat Modes */
+  src: url('../fonts/leelawdb.woff') format('woff'), 
+       url('../fonts/leelawdb.ttf')  format('truetype'), 
+       url('../fonts/leelawdb.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
 body *{
 	color: #ab2d2a;
 }
@@ -23,6 +30,9 @@ footer *{
 }
 .logovinila{
 	margin: 20px 0;
+}
+.nav-pills *{
+  font-family: 'Leelawadee bold';
 }
 .nav li a:hover, .nav li a:active, .nav li a:focus{
 	background: transparent;
@@ -49,7 +59,7 @@ footer *{
 	background: #ab2d2a;
 }
 .menuprin nav *{
-	color: white;
+	color: #d7d2c5;
 }
 .menuprin nav ul{
 	width: 540px;
@@ -68,43 +78,55 @@ footer *{
 	float: right;
 }
 .bolsa .menu-bag li a{
-	padding-right: 35px;
-	text-transform: uppercase;
+	font-family: 'Leelawadee Bold';
+	padding: 15px  35px 0 0;
+	text-transform: lowercase;
+	height: 50px;
+	padding-right: 55px;
 	background: url('../img/bag.jpg') scroll no-repeat right 0 transparent;
 }
 .bolsa .menu-bag li a:hover, .lang li a:hover, .f-menu li a:hover{
 	text-decoration: underline;
 	color: #ab2d2a;
 }
-.caret{
-	display: none;
-}
+
 .nav > li > a:hover, .nav > li > a:focus{
 	background-color: transparent;
 }
 .nav > li > a:hover, .nav > li > .dropdown-toggle:focus{
 	background-color: transparent;
 }
-.dropdown-menu{
+.nav-pills .dropdown-menu{
 	background: transparent;
 	border-radius: 0;
 	border: none;
 	box-shadow: none;
+	display: block;
+    margin-left: 30px;
+    min-width: 110px;
+    width: 110px;
+    background: rgba(171,45,42, 0.7);
 }
-.nav-pills .dropdown-menu{
-    width: 160px;
-    background: transparent;
-    padding-top: 2px;
-}
+
 .nav-pills .dropdown-menu li{
-	background: rgba(171,45,42, 0.7);
+
 	width: 100%;
 	margin: 2px 0;
 	text-align: center;
 }
 .nav-pills .dropdown-menu li a{
-	color: #fff;
+	color: #d7d2c5;
 	text-transform: lowercase;
+	padding: 5px;
+	text-align: right;
+	margin: 0;
+	font-size: 12px;
+}
+.caret {
+    border-left: 6px solid rgba(0, 0, 0, 0);
+    border-right: 6px solid rgba(0, 0, 0, 0);
+    border-top: 7px solid;
+    width: 6px;
 }
 .nav-pills .dropdown-menu li a:first-letter{
 	text-transform: uppercase;
@@ -121,6 +143,9 @@ footer *{
 	background: rgba(171,45,42, 0.7);
 	margin: 0;
 	color: #d7d2c5;
+}
+.menuprin nav ul .icon-cart a{
+	text-transform: lowercase;
 }
 /*HOME SUBHEADER*/
 .gallery img{
