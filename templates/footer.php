@@ -4,6 +4,7 @@
 			<div class="menu-footer">
 	        	<?php wp_nav_menu(array('theme_location' => 'footer-vinila', 'menu_class' => 'nav f-menu')); ?>
 	    	</div>
+	    	<div class="logofooter pull-left"><img src="/wp-content/themes/fik-vinila/assets/img/logosmall.png"></div>
 		    <p class="col-sm-offset-9 copyr">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
 		</div>
 		<aside class="f-social col-sm-4">
@@ -19,9 +20,10 @@
 				<p>Síguenos en:</p> 
 			  	<?php
 		        	if (has_nav_menu('social-menu')) :
-		          		wp_nav_menu(array('theme_location' => 'social-menu', 'menu_class' => 'nav social'));
+		          		wp_nav_menu(array('theme_location' => 'social-menu', 'menu_class' => 'nav social pull-left'));
 		        	endif;
 		      	?>
+		      	<div class="pull-right partelogo"><?php the_fikstores_badge(); ?></div>
 	    	</div>
 		</aside>
 	</div>
