@@ -172,6 +172,13 @@ footer *{
 	color: #d7d2c5;
 	text-decoration: none;
 }*/
+/*LIST PRODUCTS*/
+
+.producto {
+    margin-bottom: 70px;
+}
+
+/*BOX HOME*/
 .izq *{
 	text-transform: uppercase;
 }
