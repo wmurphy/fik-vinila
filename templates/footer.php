@@ -4,7 +4,7 @@
 			<div class="menu-footer">
 	        	<?php wp_nav_menu(array('theme_location' => 'footer-vinila', 'menu_class' => 'nav f-menu')); ?>
 	    	</div>
-		    <p class="col-sm-offset-10 copyr">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
+		    <p class="col-sm-offset-9 copyr">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
 		</div>
 		<aside class="f-social col-sm-4">
 			<section class="widget ns_widget_mailchimp-2 widget_ns_mailchimp">
