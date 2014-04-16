@@ -150,25 +150,28 @@ footer *{
 .gallery img{
 	width: 100%;
 }
+.home .page-header{
+	display: none;
+}
 /*HOME CONTENT*/
 .element{
 	display: inline-block;
 	text-align: center;
 	height: 360px;
-	margin: 50px 0;
+	margin: 180px 0;
 }
-.element a{
+/*.element a{
 	font-size: 64px;
     font-weight: bold;
     background: rgba(215,210,197, 0.4);
     display: block;
     margin-top: 97px;
     padding: 38px 0;
-}
-.element a:hover, .element a:active, .element a:focus{
+}*/
+/*.element a:hover, .element a:active, .element a:focus{
 	color: #d7d2c5;
 	text-decoration: none;
-}
+}*/
 .izq *{
 	text-transform: uppercase;
 }
