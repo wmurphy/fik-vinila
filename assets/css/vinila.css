@@ -177,17 +177,24 @@ footer *{
 .producto {
     margin-bottom: 70px;
 }
-
-/*BOX HOME*/
-.izq *{
-	text-transform: uppercase;
+.producto a{
+	display: block;
+    width: 300px;
 }
-.izq{
+/*Producto*/
+.product-gallery{
+	margin: 40px 0;
+}
+/*BOX HOME*/
+/*.izq *{
+	text-transform: uppercase;
+}*/
+/*.izq{
 	background: url('../img/prueba1.jpg') scroll no-repeat 0 0 transparent;
 }
 .dcha{
 	background: url('../img/prueba2.jpg') scroll no-repeat 0 0 transparent;
-}
+}*/
 .dcha a{
 	padding: 15px 15px;
 	line-height: 66px;
