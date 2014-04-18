@@ -176,15 +176,56 @@ footer *{
 
 .producto {
     margin-bottom: 70px;
+    list-style: none;
+    position: relative;
 }
 .producto a{
 	display: block;
     width: 300px;
 }
+.producto:hover .hoverproduct{
+	display: block;
+}
+.hoverproduct{
+	display: none;
+    background-color: #ab2d2a;
+    background-color: rgba(171,45,42, 0.7); 
+    height: 350px;
+    max-height: 270px;
+    padding: 80px 20px 20px 20px;
+    position: absolute;
+    top: 0;
+    width: 300px;
+}
+.hoverproduct *{
+	color: #fff;
+	font-family: 'Leelawadee Bold';
+}
+.hoverproduct h2{
+	line-height: 24px;
+}
+.hoverproduct h2 a{
+	text-transform: uppercase;
+	text-align: center;
+	display: inline;
+	font-size: 20px;
+	color: #fff;
+	text-decoration: none;
+}
+.hoverproduct{
+	text-align: center;
+}
+.hoverproduct .product-price a{
+	width: 260px;
+}
+.hoverproduct .product-price a:hover{
+	text-decoration: none;
+}
 /*Producto*/
 .product-gallery{
 	margin: 40px 0;
 }
+
 /*BOX HOME*/
 /*.izq *{
 	text-transform: uppercase;
