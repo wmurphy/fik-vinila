@@ -22,6 +22,7 @@ $post_template_name = '';
 $home_template_name = '';
 
 // Others
+add_theme_support('bootstrap-3');           // Tell Fik Stores this theme supports bootstrap 3!
 add_theme_support('root-relative-urls');    // Enable relative URLs
 add_theme_support('bootstrap-gallery');     // Enable Bootstrap's thumbnails component on [gallery]
 add_theme_support('nice-search');           // Enable /?s= to /search/ redirect
