@@ -31,11 +31,11 @@
         
         <div class="price-and-purchase col-md-5">
             <header>
-      <h1  itemprop="name" class="entry-title product-title"><?php the_title(); ?></h1>
-    </header>
+                <h1 itemprop="name" class="entry-title product-title"><?php the_title(); ?></h1>
+            </header>
             <?php the_fik_price(); ?>
             <?php the_fik_add_to_cart_button(); ?>
-            
+          
             <?php if ( is_active_sidebar( 'sidebar-4' ) ) : ?>
             <div id="product-secondary" class="widget-area" role="complementary">
                 <?php dynamic_sidebar( 'sidebar-4' ); ?>
