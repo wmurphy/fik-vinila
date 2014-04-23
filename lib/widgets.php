@@ -22,6 +22,15 @@ function roots_widgets_init() {
     'after_title'   => '</h3>',
   ));
 
+    register_sidebar(array(
+    'name'          => __('newsletter', 'roots'),
+    'id'            => 'sidebar-news',
+    'before_widget' => '<section class="widget newsletter %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>',
+  ));
+
   // Widgets
   register_widget('Roots_Vcard_Widget');
 }

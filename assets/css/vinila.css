@@ -3,6 +3,13 @@
 #ab2d2a rojo
 #d7d2c5 marron
 */
+@font-face {
+  font-family: 'Leelawadee Bold';
+  /*src: url('../fonts/leelawdb.eot'); *//* IE9 Compat Modes */
+  src: url('../fonts/leelawdb.woff') format('woff'), 
+       url('../fonts/leelawdb.ttf')  format('truetype'), 
+       url('../fonts/leelawdb.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
 body *{
 	color: #ab2d2a;
 }
@@ -23,6 +30,9 @@ footer *{
 }
 .logovinila{
 	margin: 20px 0;
+}
+.nav-pills *{
+  font-family: 'Leelawadee bold';
 }
 .nav li a:hover, .nav li a:active, .nav li a:focus{
 	background: transparent;
@@ -49,7 +59,7 @@ footer *{
 	background: #ab2d2a;
 }
 .menuprin nav *{
-	color: white;
+	color: #d7d2c5;
 }
 .menuprin nav ul{
 	width: 540px;
@@ -68,43 +78,54 @@ footer *{
 	float: right;
 }
 .bolsa .menu-bag li a{
-	padding-right: 35px;
-	text-transform: uppercase;
+	font-family: 'Leelawadee Bold';
+	padding: 15px  35px 0 0;
+	text-transform: lowercase;
+	height: 50px;
+	padding-right: 55px;
 	background: url('../img/bag.jpg') scroll no-repeat right 0 transparent;
 }
 .bolsa .menu-bag li a:hover, .lang li a:hover, .f-menu li a:hover{
 	text-decoration: underline;
 	color: #ab2d2a;
 }
-.caret{
-	display: none;
-}
+
 .nav > li > a:hover, .nav > li > a:focus{
 	background-color: transparent;
 }
 .nav > li > a:hover, .nav > li > .dropdown-toggle:focus{
 	background-color: transparent;
 }
-.dropdown-menu{
+.nav-pills .dropdown-menu{
 	background: transparent;
 	border-radius: 0;
 	border: none;
 	box-shadow: none;
+    margin-left: 30px;
+    min-width: 110px;
+    width: 110px;
+    background: rgba(171,45,42, 0.7);
 }
-.nav-pills .dropdown-menu{
-    width: 160px;
-    background: transparent;
-    padding-top: 2px;
-}
+
 .nav-pills .dropdown-menu li{
-	background: rgba(171,45,42, 0.7);
+
 	width: 100%;
 	margin: 2px 0;
 	text-align: center;
 }
 .nav-pills .dropdown-menu li a{
-	color: #fff;
+	color: #d7d2c5;
 	text-transform: lowercase;
+	padding: 5px;
+	text-align: right;
+	margin: 0;
+	font-size: 12px;
+}
+.caret {
+    border-left: 6px solid rgba(0, 0, 0, 0);
+    border-right: 6px solid rgba(0, 0, 0, 0);
+    border-top: 7px solid;
+    width: 6px;
 }
 .nav-pills .dropdown-menu li a:first-letter{
 	text-transform: uppercase;
@@ -122,42 +143,146 @@ footer *{
 	margin: 0;
 	color: #d7d2c5;
 }
+.menuprin nav ul .icon-cart a{
+	text-transform: lowercase;
+}
 /*HOME SUBHEADER*/
 .gallery img{
 	width: 100%;
+}
+.home .page-header{
+	display: none;
 }
 /*HOME CONTENT*/
 .element{
 	display: inline-block;
 	text-align: center;
-	height: 360px;
-	margin: 50px 0;
+	margin: 180px 0;
 }
-.element a{
+/*.element a{
 	font-size: 64px;
     font-weight: bold;
     background: rgba(215,210,197, 0.4);
     display: block;
     margin-top: 97px;
     padding: 38px 0;
-}
-.element a:hover, .element a:active, .element a:focus{
+}*/
+/*.element a:hover, .element a:active, .element a:focus{
 	color: #d7d2c5;
 	text-decoration: none;
+}*/
+/*LIST PRODUCTS*/
+
+.producto {
+    margin-bottom: 70px;
+    list-style: none;
+    position: relative;
 }
-.izq *{
+.producto a{
+	display: block;
+    width: 300px;
+}
+.producto:hover .hoverproduct{
+	display: block;
+}
+.hoverproduct{
+	display: none;
+    background-color: #ab2d2a;
+    background-color: rgba(171,45,42, 0.7); 
+    height: 350px;
+    max-height: 270px;
+    padding: 80px 20px 20px 20px;
+    position: absolute;
+    top: 0;
+    width: 300px;
+}
+.hoverproduct *{
+	color: #fff;
+	font-family: 'Leelawadee Bold';
+}
+.hoverproduct h2{
+	line-height: 24px;
+}
+.hoverproduct h2 a{
 	text-transform: uppercase;
+	text-align: center;
+	display: inline;
+	font-size: 20px;
+	color: #fff;
+	text-decoration: none;
 }
-.izq{
+.hoverproduct{
+	text-align: center;
+}
+.hoverproduct .product-price a{
+	width: 260px;
+}
+.hoverproduct .product-price a:hover{
+	text-decoration: none;
+}
+/*Producto*/
+.product-gallery{
+	margin: 40px 0;
+}
+.fik_product .price{
+	display: block;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+   	color: #808080;
+   	font-size: 30px;
+}
+.fik_product .price .amount{
+	font-size: 30px;
+	color: #808080;
+}
+.fik_add_cart .control-label{
+	text-transform: uppercase;
+	color: #808080;
+	margin-bottom: 0;
+}
+.fik_add_cart .btn{
+	background: #ab2d2a;
+	border: 1px solid #ab2d2a;
+	width: 100%;
+	border-radius: 0;
+	text-transform: uppercase;
+	padding: 10px 0;
+}
+.fik_add_cart .product-quantity{
+	border: 1px solid #d7d2c5;
+	padding: 10px 20px;
+	margin-bottom: 15px;
+}
+.fik_add_cart .controls{
+	width: 20px;
+	display: inline;
+	float: right;
+}
+.fik_add_cart .input-mini{
+	width: 20px;
+	border: none;
+	color: #808080;
+}
+.fik_product .entry-title{
+	background: #d7d2c5;
+	color: #ab2d2a;
+	text-align: center;
+	padding: 20px;
+	text-transform: uppercase;
+	margin-top: 30px;
+}
+/*BOX HOME*/
+/*.izq *{
+	text-transform: uppercase;
+}*/
+/*.izq{
 	background: url('../img/prueba1.jpg') scroll no-repeat 0 0 transparent;
 }
 .dcha{
 	background: url('../img/prueba2.jpg') scroll no-repeat 0 0 transparent;
-}
-.dcha a{
-	padding: 15px 15px;
-	line-height: 66px;
-}
+}*/
+
 /*footer*/
 footer *{
 	font-size: 12px;
@@ -178,7 +303,10 @@ footer{
     width: auto;
     text-transform: uppercase;
 }
-
+.logofooter{
+	margin-left: 21px;
+	margin-top: 29px;
+}
 /*SOCIAL*/
 .nav li{
 	float: left;
@@ -199,6 +327,7 @@ footer form input{
 	margin-top: 3px;
 	height: 32px;
 	width: 200px;
+	  margin-left: 4px;
 }
 footer form input.button{
 	width: 137px;
@@ -208,8 +337,14 @@ footer form input.button{
 	font-size: 16px;
 	text-transform: uppercase;
 }
+#ns_widget_mailchimp_form-2 label{
+	display: none;
+}
+.partelogo{
+	margin-top: -9px;
+}
 .social{
-	padding-top: 7px;
+	padding-top: 9px;
 	margin-bottom: 30px;
 }
 .social p{
@@ -218,53 +353,78 @@ footer form input.button{
 	margin-top: 10px;
 }
 .social li{
-	width: 39px;
-	margin-right: 15px;
+    margin-right: 15px;
+    width: 31px;
 }
 .social li a{
 	background:url('../img/social.png') scroll no-repeat 0 0 transparent;
 	text-indent: -99000px;
 	overflow: hidden;
 	background-position: -136px 0;
-    height: 40px;
+    height: 31px;
     padding: 0;
-    width: 39px;
+    width: 32px;
 }
 .social li a:hover{	
 	background:url('../img/social.png') scroll no-repeat 0 0 transparent;
-	height: 40px;
+	height: 31px;
 	border-radius: 0;
 }
 .social .face a{
 	background-position:0px 0;
 }
-.social .twitter{
-	background-position:-136px 0;
+.social .twitter a{
+	background-position:-103px 0;
 }
 .social .instagram a{
-	background-position:-46px 0;
+	background-position:-34px 0;
 }
 .social .pinterest a{
-	background-position:-91px 0;
+	background-position:-70px 0;
 }
 .social .gplus a{
-	background-position:-181px 0;
+	background-position:-137px 0;
 }
 
 
 .social .face a:hover{
-	background-position:0px -44px;
+	background-position:0px -33px;
 }
 .social .twitter a:hover{
-	background-position:-136px -44px ;
+	background-position:-103px -33px;
 }
 .social .instagram a:hover{
-	background-position:-46px -44px;
+	background-position:-34px -33px;
 }
 .social .pinterest a:hover{
-	background-position:-91px -44px;
+	background-position:-70px -33px;
 }
 .social .gplus a:hover{
-	background-position:-181px -44px;
+	background-position:-137px -33px;
 }
+/*QUITAR ESTAS LINEAS CUANDO HAYA MENU*/
+	.copyr {
+	    margin-top: 95px;
+	}
+	.logofooter {
+	    margin-top: 55px;
+	}
 
+@media screen and (max-width: 768px){
+	.homecontent .element{
+		margin: 90px 0 0 0;
+		padding: 0;
+	}
+	.homecontent .dcha{
+		margin-bottom: 90px;
+	}
+	.homecontent .element, .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img{
+		width: 100%;
+	}
+
+}
+@media screen and (max-width: 575px){
+    .menuprin nav ul{
+        width: auto;
+    }
+}
