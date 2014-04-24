@@ -340,6 +340,9 @@ footer form input.button{
 #ns_widget_mailchimp_form-2 label{
 	display: none;
 }
+.widget_ns_mailchimp h3{
+	font-weight: normal;
+}
 .partelogo{
 	margin-top: -9px;
 }
