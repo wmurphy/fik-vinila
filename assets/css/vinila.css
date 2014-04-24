@@ -343,6 +343,13 @@ footer form input.button{
 .widget_ns_mailchimp h3{
 	font-weight: normal;
 }
+
+#ns_widget_mailchimp_form-2 p {
+	color: #d7d2c5;
+	text-align: center;
+	padding-top: 10px;
+}
+
 .partelogo{
 	margin-top: -9px;
 }
