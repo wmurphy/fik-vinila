@@ -159,6 +159,10 @@ footer *{
 	text-align: center;
 	margin: 180px 0;
 }
+
+.carousel-inner img {
+	width: 100%;
+}
 /*.element a{
 	font-size: 64px;
     font-weight: bold;
