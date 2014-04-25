@@ -30,6 +30,14 @@ function roots_widgets_init() {
     'before_title'  => '<h3>',
     'after_title'   => '</h3>',
   ));
+    register_sidebar(array(
+    'name'          => __('textproduct', 'roots'),
+    'id'            => 'sidebar-textproduct',
+    'before_widget' => '<section class="widget textproduct %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>',
+  ));
 
   // Widgets
   register_widget('Roots_Vcard_Widget');

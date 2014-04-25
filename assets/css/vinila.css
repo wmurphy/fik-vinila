@@ -9,6 +9,17 @@
   src: url('../fonts/leelawdb.woff') format('woff'), 
        url('../fonts/leelawdb.ttf')  format('truetype'), 
        url('../fonts/leelawdb.svg#svgFontName') format('svg'); /* Legacy iOS */
+
+   leelawad
+}
+@font-face {
+  font-family: 'Leelawadee';
+  /*src: url('../fonts/leelawdb.eot'); *//* IE9 Compat Modes */
+  src: url('../fonts/leelawad.woff') format('woff'), 
+       url('../fonts/leelawad.ttf')  format('truetype'), 
+       url('../fonts/leelawad.svg#svgFontName') format('svg'); /* Legacy iOS */
+
+   leelawad
 }
 body *{
 	color: #ab2d2a;
@@ -159,6 +170,12 @@ footer *{
 	text-align: center;
 	margin: 180px 0;
 }
+.carousel-indicators .active{
+	background: #ab2d2a;
+}
+.carousel-indicators li{
+	border: 1px solid #ab2d2a;
+}
 /*.element a{
 	font-size: 64px;
     font-weight: bold;
@@ -179,50 +196,51 @@ footer *{
     position: relative;
 }
 .producto a{
-	display: block;
+	display: inline-block;
     width: 300px;
 }
-.producto:hover .hoverproduct{
-	display: block;
+.producto a:hover{
+	text-decoration: none;
+	color: #EF9D9A;
 }
-.hoverproduct{
-	display: none;
-    background-color: #ab2d2a;
-    background-color: rgba(171,45,42, 0.7); 
-    height: 350px;
-    max-height: 270px;
-    padding: 80px 20px 20px 20px;
-    position: absolute;
-    top: 0;
-    width: 300px;
+
+.producto .fik2012-thumb{
+	background: url('../img/shadow.jpg') scroll no-repeat center bottom transparent;
+	padding-bottom: 40px;
 }
-.hoverproduct *{
-	color: #fff;
-	font-family: 'Leelawadee Bold';
+
+.fik2012-thumb-sq:hover .hoverproduct a, .fik2012-thumb-sq:hover .hoverproduct .product-price .amount, .hoverproduct .product-price .price{
+	color: #808080;
 }
 .hoverproduct h2{
-	line-height: 24px;
-}
-.hoverproduct h2 a{
+    font-family: 'Leelawadee'; 
 	text-transform: uppercase;
-	text-align: center;
-	display: inline;
-	font-size: 20px;
-	color: #fff;
+	text-align: right;
+	display: inline-block;
+	font-size: 21px;
+	color: #ab2d2a;
 	text-decoration: none;
+
 }
 .hoverproduct{
-	text-align: center;
+	text-align: right;
 }
-.hoverproduct .product-price a{
-	width: 260px;
+.hoverproduct .product-price .amount, .hoverproduct .product-price .price{
+	width: 100%;
+	text-align: right;
+	color: #808080;
+	font-size: 21px;
+	font-family: 'Leelawadee';
 }
-.hoverproduct .product-price a:hover{
-	text-decoration: none;
-}
+
+
 /*Producto*/
 .product-gallery{
 	margin: 40px 0;
+}
+.product-gallery h3{
+	font-size: 16px;
+	text-transform: uppercase;
 }
 .fik_product .price{
 	display: block;
@@ -271,6 +289,11 @@ footer *{
 	padding: 20px;
 	text-transform: uppercase;
 	margin-top: 30px;
+}
+.price-and-purchase p{
+	color: #808080;
+	margin: 20px 0 40px 0;
+	font-size: 12px;
 }
 /*BOX HOME*/
 /*.izq *{
@@ -401,6 +424,21 @@ footer form input.button{
 }
 .social .gplus a:hover{
 	background-position:-137px -33px;
+}
+.thumbnail {
+    float: left;
+    height: 90px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    padding: 12px;
+    width: 100px;
+}
+.thumbnails{
+	display: inline-block;
+}
+.fik_product .product-title{
+	font-size: 30px;
 }
 /*QUITAR ESTAS LINEAS CUANDO HAYA MENU*/
 	.copyr {
