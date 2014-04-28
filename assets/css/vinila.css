@@ -170,11 +170,17 @@ footer *{
 	text-align: center;
 	margin: 180px 0;
 }
+
 .carousel-indicators .active{
 	background: #ab2d2a;
 }
 .carousel-indicators li{
 	border: 1px solid #ab2d2a;
+}
+
+.carousel-inner img {
+	width: 100%;
+
 }
 /*.element a{
 	font-size: 64px;
@@ -363,6 +369,16 @@ footer form input.button{
 #ns_widget_mailchimp_form-2 label{
 	display: none;
 }
+.widget_ns_mailchimp h3{
+	font-weight: normal;
+}
+
+#ns_widget_mailchimp_form-2 p {
+	color: #d7d2c5;
+	text-align: center;
+	padding-top: 10px;
+}
+
 .partelogo{
 	margin-top: -9px;
 }

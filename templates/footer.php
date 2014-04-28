@@ -17,7 +17,7 @@
 		          		wp_nav_menu(array('theme_location' => 'social-menu', 'menu_class' => 'nav social pull-left'));
 		        	endif;
 		      	?>
-		      	<div class="pull-right partelogo"><?php the_fikstores_badge(); ?></div>
+		      	<div class="pull-right partelogo"><img class="replace-2x fikstores-badge" width="105" height="50" alt="Better ecommerce" src="/wp-content/themes/fik-vinila/assets/img/logofik.png"></div>
 	    	</div>
 		</aside>
 		<div class="col-md-8">
@@ -25,7 +25,7 @@
 	        	<?php wp_nav_menu(array('theme_location' => 'footer-vinila', 'menu_class' => 'nav f-menu')); ?>
 	    	</div>
 	    	<div class="logofooter pull-left"><img src="/wp-content/themes/fik-vinila/assets/img/logosmall.png"></div>
-		    <p class="col-sm-offset-9 copyr">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
+		    <p class="col-sm-offset-9 copyr">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> </p>
 		</div>
 		
 	</div>
