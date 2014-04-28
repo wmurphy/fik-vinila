@@ -2,7 +2,9 @@
   <div class="row container headercont">
     <div class="col-lg-12">
       <div class="logoheader">
-        <a href="<?php echo home_url('/') ?>" title="Vinila Fabrics" class="logovinila"><img src="/wp-content/themes/fik-vinila/assets/img/logo.jpg"></a>
+        <a href="<?php echo home_url('/') ?>" title="Vinila Fabrics" class="logovinila">
+          <?php the_store_logo(null, array('class' => 'logo')); ?>
+        </a>
       </div> 
       <div class="col-sm-3 pull-right">
           <div class="idioma">
