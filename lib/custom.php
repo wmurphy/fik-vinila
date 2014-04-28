@@ -42,3 +42,4 @@ function add_appearance_custom_css() {
 }
 add_action('wp_head', 'add_appearance_custom_css');
 
+remove_action('wp_footer', 'fik_legal_terms_link', 100);
