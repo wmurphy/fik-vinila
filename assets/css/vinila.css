@@ -39,6 +39,11 @@ footer *{
 .no-padding-left{
 	padding-left: 0;
 }
+.logoheader{
+	margin: 0 auto;
+    text-align: center;
+    width: 40%;
+}
 .logovinila{
 	margin: 20px 0;
 }
@@ -170,7 +175,9 @@ footer *{
 	text-align: center;
 	margin: 180px 0;
 }
-
+.carousel-indicators{
+	bottom: -40px;
+}
 .carousel-indicators .active{
 	background: #ab2d2a;
 }
@@ -196,6 +203,9 @@ footer *{
 }*/
 /*LIST PRODUCTS*/
 
+.post-type-archive .wrap{
+	margin-top: 70px;
+}
 .producto {
     margin-bottom: 70px;
     list-style: none;
@@ -249,15 +259,16 @@ footer *{
 	text-transform: uppercase;
 }
 .fik_product .price{
-	display: block;
-    text-align: center;
-    width: 100%;
-    padding: 10px 0;
+	display: inline-block;
+	text-align: right;
+	width: 50%;
+    padding:0;
    	color: #808080;
-   	font-size: 30px;
+   	font-size: 25px;
+
 }
 .fik_product .price .amount{
-	font-size: 30px;
+	font-size: 25px;
 	color: #808080;
 }
 .fik_add_cart .control-label{
@@ -267,14 +278,14 @@ footer *{
 }
 .fik_add_cart .btn{
 	background: #ab2d2a;
-	border: 1px solid #ab2d2a;
+	border: none;
 	width: 100%;
 	border-radius: 0;
 	text-transform: uppercase;
 	padding: 10px 0;
 }
 .fik_add_cart .product-quantity{
-	border: 1px solid #d7d2c5;
+	border: 3px solid #d7d2c5;
 	padding: 10px 20px;
 	margin-bottom: 15px;
 }
@@ -289,12 +300,18 @@ footer *{
 	color: #808080;
 }
 .fik_product .entry-title{
-	background: #d7d2c5;
 	color: #ab2d2a;
-	text-align: center;
-	padding: 20px;
+	text-align: left;
 	text-transform: uppercase;
-	margin-top: 30px;
+	margin:0;
+	font-size: 25px;
+}
+.price-and-purchase{
+	margin: 20px 0;
+}
+.price-and-purchase header{
+	float: left;
+	width: 50%;
 }
 .price-and-purchase p{
 	color: #808080;
