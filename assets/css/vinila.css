@@ -10,7 +10,6 @@
        url('../fonts/leelawdb.ttf')  format('truetype'), 
        url('../fonts/leelawdb.svg#svgFontName') format('svg'); /* Legacy iOS */
 
-   leelawad
 }
 @font-face {
   font-family: 'Leelawadee';
@@ -19,7 +18,6 @@
        url('../fonts/leelawad.ttf')  format('truetype'), 
        url('../fonts/leelawad.svg#svgFontName') format('svg'); /* Legacy iOS */
 
-   leelawad
 }
 body *{
 	color: #ab2d2a;
@@ -40,7 +38,7 @@ footer *{
 	padding-left: 0;
 }
 .logoheader{
-	margin: 0 auto;
+	margin: 20px auto;
     text-align: center;
     width: 40%;
 }
@@ -220,13 +218,26 @@ footer *{
 	color: #EF9D9A;
 }
 
-.producto .fik2012-thumb{
-	background: url('../img/shadow.jpg') scroll no-repeat center bottom transparent;
-	padding-bottom: 40px;
+.producto .productthumb{
+	display: block;
+    padding-bottom: 40px;
+    width: 100%;
 }
 
-.fik2012-thumb-sq:hover .hoverproduct a, .fik2012-thumb-sq:hover .hoverproduct .product-price .amount, .hoverproduct .product-price .price{
-	color: #808080;
+.producto .productthumb img{
+	height: 100%;
+    width: 100%;
+}
+.producto .productthumb:hover .contenthover{
+	    background: green;
+    bottom: 0;
+    color: #FFFFFF;
+    display: none;
+    height: 82px;
+    overflow: hidden;
+    padding: 120px 20px 20px;
+    position: absolute;
+    width: 182px;
 }
 .hoverproduct h2{
     font-family: 'Leelawadee'; 
@@ -239,7 +250,9 @@ footer *{
 
 }
 .hoverproduct{
+	margin-top: 35px;
 	text-align: right;
+	background: url('../img/shadow.jpg') scroll no-repeat center top transparent;
 }
 .hoverproduct .product-price .amount, .hoverproduct .product-price .price{
 	width: 100%;
@@ -271,6 +284,9 @@ footer *{
 	font-size: 25px;
 	color: #808080;
 }
+.fik_add_cart{
+	margin: 60px 0;
+}
 .fik_add_cart .control-label{
 	text-transform: uppercase;
 	color: #808080;
@@ -288,11 +304,21 @@ footer *{
 	border: 3px solid #d7d2c5;
 	padding: 10px 20px;
 	margin-bottom: 15px;
+	margin-top: 20px;
 }
+.fik_add_cart .product-variations{
+	display: block;
+    margin: 20px 0;
+    width: 100%;
+    border: 3px solid #d7d2c5;
+    padding: 12px 20px;
+}
+
 .fik_add_cart .controls{
-	width: 20px;
+    width: 200px;
 	display: inline;
 	float: right;
+	text-align: right;
 }
 .fik_add_cart .input-mini{
 	width: 20px;
@@ -318,16 +344,6 @@ footer *{
 	margin: 20px 0 40px 0;
 	font-size: 12px;
 }
-/*BOX HOME*/
-/*.izq *{
-	text-transform: uppercase;
-}*/
-/*.izq{
-	background: url('../img/prueba1.jpg') scroll no-repeat 0 0 transparent;
-}
-.dcha{
-	background: url('../img/prueba2.jpg') scroll no-repeat 0 0 transparent;
-}*/
 
 /*footer*/
 footer *{
@@ -366,21 +382,21 @@ footer .nav.f-menu > li > a{
 footer form{
 	background: #ab2d2a;
 	margin-top: 20px;
-	width: 350px;
+	width: 100%;
 	height: 40px;
 }
 footer form input{
 	margin-top: 3px;
 	height: 32px;
-	width: 200px;
+	width: 55%;
 	  margin-left: 4px;
 }
 footer form input.button{
-	width: 137px;
+	width: 40%;
 	color: #fff;
 	background: transparent;
 	border: none;
-	font-size: 16px;
+	font-size: 14px;
 	text-transform: uppercase;
 }
 #ns_widget_mailchimp_form-2 label{
@@ -470,9 +486,6 @@ footer form input.button{
 .thumbnails{
 	display: inline-block;
 }
-.fik_product .product-title{
-	font-size: 30px;
-}
 /*QUITAR ESTAS LINEAS CUANDO HAYA MENU*/
 	.copyr {
 	    margin-top: 95px;
@@ -492,10 +505,29 @@ footer form input.button{
 	.homecontent .element, .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img{
 		width: 100%;
 	}
-
+	.logoheader{
+	    width: 100% !important;
+	}
+	
 }
 @media screen and (max-width: 575px){
     .menuprin nav ul{
         width: auto;
     }
+}
+@media (max-width: 410px){
+	.logoheader{
+	    width: 100% !important;
+	}
+	footer{
+		margin-top: 40px !important;
+	}
+	.logofooter{
+	    width: 100%;
+	}
+	.copyr{
+	    padding-left: 116px;
+	}
+	
+
 }
