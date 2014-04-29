@@ -19,7 +19,10 @@ function roots_setup() {
   add_theme_support('post-thumbnails');
   // set_post_thumbnail_size(150, 150, false);
   // add_image_size('category-thumb', 300, 9999); // 300px wide (and unlimited height)
-
+  set_post_thumbnail_size(620, 9999); // Unlimited height, soft crop
+  // Additional image sizes used in the store theme:
+  add_image_size('vinlia-square', 350, 350, true); //square thumbnail
+  
   // Add post formats (http://codex.wordpress.org/Post_Formats)
   // add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'));
 
