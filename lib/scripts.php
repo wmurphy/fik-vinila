@@ -32,6 +32,11 @@ function roots_scripts() {
   wp_enqueue_script('modernizr');
   wp_enqueue_script('jquery');
   wp_enqueue_script('roots_scripts');
+
+  wp_register_script('fik_common', get_template_directory_uri() . '/assets/js/common.js');
+  wp_register_script('fik_product_js', get_template_directory_uri() . '/assets/js/fik_product.js', array(), null, false);
+  wp_enqueue_script('fik_common');
+  wp_enqueue_script('fik_product_js');
 }
 add_action('wp_enqueue_scripts', 'roots_scripts', 100);
 
