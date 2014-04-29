@@ -229,7 +229,7 @@ footer *{
     width: 100%;
 }
 .producto .productthumb:hover .contenthover{
-	    background: green;
+	background: green;
     bottom: 0;
     color: #FFFFFF;
     display: none;
@@ -344,6 +344,12 @@ footer *{
 	margin: 20px 0 40px 0;
 	font-size: 12px;
 }
+.widget .hoverproduct h2{
+	font-size: 14px;
+}
+.widget .hoverproduct .product-price .amount, .hoverproduct .product-price .price{
+	font-size: 12px;
+}
 
 /*footer*/
 footer *{
@@ -378,6 +384,7 @@ footer .nav.f-menu > li > a{
 }
 .copyr{
 	margin-top: 70px;
+	text-align: right;
 }
 footer form{
 	background: #ab2d2a;
@@ -487,13 +494,55 @@ footer form input.button{
 	display: inline-block;
 }
 /*QUITAR ESTAS LINEAS CUANDO HAYA MENU*/
-	.copyr {
+	/*.copyr {
 	    margin-top: 95px;
 	}
 	.logofooter {
 	    margin-top: 55px;
-	}
+	}*/
 
+@media screen and (max-width: 1200px){
+	footer .nav.f-menu > li > a {
+	    padding: 10px 11px;
+	}
+	.social li {
+	    margin-right: 10px;
+	}
+	.partelogo img{
+		height: 40px;
+	    margin-top: 10px;
+	    width: 70px;
+	}
+	.logofooter {
+	    margin: 26px 0 0 0;
+	}
+	.copyr {
+	    margin-top: 70px;
+	}
+}
+@media screen and (max-width: 1000px){
+	.hoverproduct h2 {
+    	font-size: 14px !important;
+	}
+	.hoverproduct .product-price .amount, .hoverproduct .product-price .price {
+    	font-size: 21px !important;
+	}
+	.f-menu{
+		display: inline-block;
+	    position: static;
+	    width: 50%;
+	}
+	footer .nav.f-menu > li > a {
+	    padding: 4px 11px;
+	}
+	.logofooter{
+		margin: 11px 0 0 0;
+	}
+	.copyr, .rights{
+		font-size: 9px;
+		margin-top: 55px;
+	}
+}
 @media screen and (max-width: 768px){
 	.homecontent .element{
 		margin: 90px 0 0 0;
@@ -508,25 +557,72 @@ footer form input.button{
 	.logoheader{
 	    width: 100% !important;
 	}
-	
+	.copyr {
+	    display: block;
+	    font-size: 12px;
+	    margin-top: 34px;
+	    width: 100%;
+	    text-align: left;
+	}
+	.rights{
+		font-size: 12px;
+	}
+	.logofooter {
+	    margin: 10px 0 0;
+	}
 }
-@media screen and (max-width: 575px){
+@media screen and (max-width: 690px){
     .menuprin nav ul{
         width: auto;
     }
+    .f-menu{
+    	padding-top: 0 !important;
+    	width: 100%;
+    }
+    .f-social{
+	    width: 100%;
+	}
+	.logofooter{
+		margin-bottom: 30px;
+	}
+    .copyr{
+    	display: block;
+    	margin-top: 51px;
+    	width: 100%;
+    	text-align: right;
+    }
+    .nav-pills > li {
+	    display: block;
+	    text-align: center;
+	    width: 100%;
+	}
 }
 @media (max-width: 410px){
+	.nav.f-menu li {
+	    display: block;
+	    text-transform: uppercase;
+	    width: 100%;
+	}
+	.nav.f-menu li a{
+		text-align: center;
+	}
 	.logoheader{
 	    width: 100% !important;
 	}
 	footer{
 		margin-top: 40px !important;
 	}
-	.logofooter{
+	.social p{
+		text-align: center;
+	}
+	.logofooter {
+	    margin: 18px auto;
+	    text-align: center;
 	    width: 100%;
 	}
 	.copyr{
-	    padding-left: 116px;
+	    padding-left: 0;
+	    text-align: center;
 	}
 	
 

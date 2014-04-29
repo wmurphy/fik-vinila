@@ -17,7 +17,7 @@
 	        	<?php wp_nav_menu(array('theme_location' => 'footer-vinila', 'menu_class' => 'nav f-menu')); ?>
 	    	</div>
 	    	<div class="logofooter pull-left"><img src="/wp-content/themes/fik-vinila/assets/img/logosmall.png"></div>
-		    <p class="col-sm-offset-9 copyr">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> </p>
+		    <p class="copyr">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> <span class="rights">Todos los derechos reservados</span></p>
 		</div>
 		
 	</div>
