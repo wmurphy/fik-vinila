@@ -2,7 +2,7 @@
         
         <li class="col-sm-4 producto <?php echo get_theme_mod( 'fik_product_thumb_type', 'fik2012-thumb-sq' ); ?>">
             <a href="<?php the_permalink(); ?>" class="productthumb" title="<?php the_title(); ?>">
-                <?php if ( has_post_thumbnail() ) { the_post_thumbnail( get_theme_mod( 'fik_product_thumb_type', 'fik2012-thumb-sq' ) ); } ?>           
+                <?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'vinlia-square'); } ?>           
                 <div class="hoverproduct">
                     <h2 class="product-title"><?php the_title(); ?></h2>
                     <div class="product-price"><?php the_fik_price(); ?></div>
