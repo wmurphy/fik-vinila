@@ -10,7 +10,6 @@
        url('../fonts/leelawdb.ttf')  format('truetype'), 
        url('../fonts/leelawdb.svg#svgFontName') format('svg'); /* Legacy iOS */
 
-   leelawad
 }
 @font-face {
   font-family: 'Leelawadee';
@@ -19,7 +18,6 @@
        url('../fonts/leelawad.ttf')  format('truetype'), 
        url('../fonts/leelawad.svg#svgFontName') format('svg'); /* Legacy iOS */
 
-   leelawad
 }
 body *{
 	color: #ab2d2a;
@@ -40,7 +38,7 @@ footer *{
 	padding-left: 0;
 }
 .logoheader{
-	margin: 0 auto;
+	margin: 20px auto;
     text-align: center;
     width: 40%;
 }
@@ -220,13 +218,26 @@ footer *{
 	color: #EF9D9A;
 }
 
-.producto .fik2012-thumb{
-	background: url('../img/shadow.jpg') scroll no-repeat center bottom transparent;
-	padding-bottom: 40px;
+.producto .productthumb{
+	display: block;
+    padding-bottom: 40px;
+    width: 100%;
 }
 
-.fik2012-thumb-sq:hover .hoverproduct a, .fik2012-thumb-sq:hover .hoverproduct .product-price .amount, .hoverproduct .product-price .price{
-	color: #808080;
+.producto .productthumb img{
+	height: 100%;
+    width: 100%;
+}
+.producto .productthumb:hover .contenthover{
+	background: green;
+    bottom: 0;
+    color: #FFFFFF;
+    display: none;
+    height: 82px;
+    overflow: hidden;
+    padding: 120px 20px 20px;
+    position: absolute;
+    width: 182px;
 }
 .hoverproduct h2{
     font-family: 'Leelawadee'; 
@@ -239,7 +250,9 @@ footer *{
 
 }
 .hoverproduct{
+	margin-top: 35px;
 	text-align: right;
+	background: url('../img/shadow.jpg') scroll no-repeat center top transparent;
 }
 .hoverproduct .product-price .amount, .hoverproduct .product-price .price{
 	width: 100%;
@@ -271,6 +284,9 @@ footer *{
 	font-size: 25px;
 	color: #808080;
 }
+.fik_add_cart{
+	margin: 60px 0;
+}
 .fik_add_cart .control-label{
 	text-transform: uppercase;
 	color: #808080;
@@ -288,11 +304,21 @@ footer *{
 	border: 3px solid #d7d2c5;
 	padding: 10px 20px;
 	margin-bottom: 15px;
+	margin-top: 20px;
 }
+.fik_add_cart .product-variations{
+	display: block;
+    margin: 20px 0;
+    width: 100%;
+    border: 3px solid #d7d2c5;
+    padding: 12px 20px;
+}
+
 .fik_add_cart .controls{
-	width: 20px;
+    width: 200px;
 	display: inline;
 	float: right;
+	text-align: right;
 }
 .fik_add_cart .input-mini{
 	width: 20px;
@@ -318,16 +344,12 @@ footer *{
 	margin: 20px 0 40px 0;
 	font-size: 12px;
 }
-/*BOX HOME*/
-/*.izq *{
-	text-transform: uppercase;
-}*/
-/*.izq{
-	background: url('../img/prueba1.jpg') scroll no-repeat 0 0 transparent;
+.widget .hoverproduct h2{
+	font-size: 14px;
 }
-.dcha{
-	background: url('../img/prueba2.jpg') scroll no-repeat 0 0 transparent;
-}*/
+.widget .hoverproduct .product-price .amount, .hoverproduct .product-price .price{
+	font-size: 12px;
+}
 
 /*footer*/
 footer *{
@@ -362,25 +384,26 @@ footer .nav.f-menu > li > a{
 }
 .copyr{
 	margin-top: 70px;
+	text-align: right;
 }
 footer form{
 	background: #ab2d2a;
 	margin-top: 20px;
-	width: 350px;
+	width: 100%;
 	height: 40px;
 }
 footer form input{
 	margin-top: 3px;
 	height: 32px;
-	width: 200px;
+	width: 55%;
 	  margin-left: 4px;
 }
 footer form input.button{
-	width: 137px;
+	width: 40%;
 	color: #fff;
 	background: transparent;
 	border: none;
-	font-size: 16px;
+	font-size: 14px;
 	text-transform: uppercase;
 }
 #ns_widget_mailchimp_form-2 label{
@@ -470,17 +493,56 @@ footer form input.button{
 .thumbnails{
 	display: inline-block;
 }
-.fik_product .product-title{
-	font-size: 30px;
-}
 /*QUITAR ESTAS LINEAS CUANDO HAYA MENU*/
-	.copyr {
+	/*.copyr {
 	    margin-top: 95px;
 	}
 	.logofooter {
 	    margin-top: 55px;
-	}
+	}*/
 
+@media screen and (max-width: 1200px){
+	footer .nav.f-menu > li > a {
+	    padding: 10px 11px;
+	}
+	.social li {
+	    margin-right: 10px;
+	}
+	.partelogo img{
+		height: 40px;
+	    margin-top: 10px;
+	    width: 70px;
+	}
+	.logofooter {
+	    margin: 26px 0 0 0;
+	}
+	.copyr {
+	    margin-top: 70px;
+	}
+}
+@media screen and (max-width: 1000px){
+	.hoverproduct h2 {
+    	font-size: 14px !important;
+	}
+	.hoverproduct .product-price .amount, .hoverproduct .product-price .price {
+    	font-size: 21px !important;
+	}
+	.f-menu{
+		display: inline-block;
+	    position: static;
+	    width: 50%;
+	}
+	footer .nav.f-menu > li > a {
+	    padding: 4px 11px;
+	}
+	.logofooter{
+		margin: 11px 0 0 0;
+	}
+	.copyr, .rights{
+		font-size: 9px;
+		margin-top: 55px;
+	}
+}
 @media screen and (max-width: 768px){
 	.homecontent .element{
 		margin: 90px 0 0 0;
@@ -492,10 +554,76 @@ footer form input.button{
 	.homecontent .element, .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img{
 		width: 100%;
 	}
-
+	.logoheader{
+	    width: 100% !important;
+	}
+	.copyr {
+	    display: block;
+	    font-size: 12px;
+	    margin-top: 34px;
+	    width: 100%;
+	    text-align: left;
+	}
+	.rights{
+		font-size: 12px;
+	}
+	.logofooter {
+	    margin: 10px 0 0;
+	}
 }
-@media screen and (max-width: 575px){
+@media screen and (max-width: 690px){
     .menuprin nav ul{
         width: auto;
     }
+    .f-menu{
+    	padding-top: 0 !important;
+    	width: 100%;
+    }
+    .f-social{
+	    width: 100%;
+	}
+	.logofooter{
+		margin-bottom: 30px;
+	}
+    .copyr{
+    	display: block;
+    	margin-top: 51px;
+    	width: 100%;
+    	text-align: right;
+    }
+    .nav-pills > li {
+	    display: block;
+	    text-align: center;
+	    width: 100%;
+	}
+}
+@media (max-width: 410px){
+	.nav.f-menu li {
+	    display: block;
+	    text-transform: uppercase;
+	    width: 100%;
+	}
+	.nav.f-menu li a{
+		text-align: center;
+	}
+	.logoheader{
+	    width: 100% !important;
+	}
+	footer{
+		margin-top: 40px !important;
+	}
+	.social p{
+		text-align: center;
+	}
+	.logofooter {
+	    margin: 18px auto;
+	    text-align: center;
+	    width: 100%;
+	}
+	.copyr{
+	    padding-left: 0;
+	    text-align: center;
+	}
+	
+
 }
