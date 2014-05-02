@@ -200,7 +200,7 @@ footer *{
 }
 
 .carousel-inner img {
-	width: 100%;
+	margin: 0 auto;
 
 }
 /*.element a{
