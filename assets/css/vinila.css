@@ -46,10 +46,15 @@ footer *{
 	margin: 20px 0;
 }
 .nav-pills *{
-  font-family: 'Leelawadee bold';
+  font-family: 'Leelawadee';
 }
 .nav li a:hover, .nav li a:active, .nav li a:focus{
 	background: transparent;
+}
+.language{
+	position: absolute;
+	bottom: 40px;
+	right: 0;
 }
 .nav.lang{
 	float: right;
@@ -76,28 +81,39 @@ footer *{
 	color: #d7d2c5;
 }
 .menuprin nav ul{
-	width: 540px;
+	width: 580px;
 	margin: 0 auto;
 }
 .menuprin nav ul li a{
-	text-transform: uppercase;
 	margin: 0 20px;
 }
 .menuprin nav ul li a:hover{
 	background: transparent;
 	color: #d7d2c5;
 }
-
+.logomenu img{
+	margin-top: 12px;
+}
+.nav-main{
+	float: left;
+}
+.nav-main ul li a{
+	font-size: 18px;
+}
+.bolsa{
+	float: left;
+}
 .bolsa .menu-bag li{
 	float: right;
 }
 .bolsa .menu-bag li a{
-	font-family: 'Leelawadee Bold';
-	padding: 15px  35px 0 0;
+	font-family: 'Leelawadee';
+	padding: 15px 0 0 35px;
 	text-transform: lowercase;
 	height: 50px;
-	padding-right: 55px;
-	background: url('../img/bag.jpg') scroll no-repeat right 0 transparent;
+	padding-left: 55px;
+	color: white;
+	background: url('../img/bag.png') scroll no-repeat center left transparent;
 }
 .bolsa .menu-bag li a:hover, .lang li a:hover, .f-menu li a:hover{
 	text-decoration: underline;
@@ -519,6 +535,9 @@ footer form input.button{
 	.copyr {
 	    margin-top: 70px;
 	}
+	.language{
+		bottom: 17px;
+	}
 }
 @media screen and (max-width: 1000px){
 	.hoverproduct h2 {
@@ -541,6 +560,12 @@ footer form input.button{
 	.copyr, .rights{
 		font-size: 9px;
 		margin-top: 55px;
+	}
+		.nav-main ul.nav-pills{
+		width: 410px !important;
+	}
+		.nav-main ul.nav-pills li a{
+		margin: 0 ;
 	}
 }
 @media screen and (max-width: 768px){
@@ -570,6 +595,16 @@ footer form input.button{
 	.logofooter {
 	    margin: 10px 0 0;
 	}
+	.logomenu{
+		display: inline;
+		float: left;
+	}
+	.bolsa{
+		float: right;
+	}
+	.nav-main{
+		margin-left: 50px;
+	}
 }
 @media screen and (max-width: 690px){
     .menuprin nav ul{
@@ -595,6 +630,19 @@ footer form input.button{
 	    display: block;
 	    text-align: center;
 	    width: 100%;
+	}
+	.menuprin{
+		position: relative;
+	}
+	.bolsa{
+		position: absolute;
+		right: 0;
+	}
+	.nav-main{
+		margin-left: 0;
+	}
+	.nav-main ul.nav-pills{
+		width: auto !important;
 	}
 }
 @media (max-width: 410px){
@@ -624,6 +672,10 @@ footer form input.button{
 	    padding-left: 0;
 	    text-align: center;
 	}
-	
-
+	.menuprin{
+		padding-bottom: 30px;
+	}
+	.language{
+		bottom: -24px;
+	}
 }
