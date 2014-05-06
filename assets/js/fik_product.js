@@ -25,4 +25,9 @@ $(document).ready(function() {
   });
 
   $('.carousel').carousel();
+  $('.menuprin').affix({
+      offset: {
+        top: $('.headercont').height()
+      }
+  }); 
 });
