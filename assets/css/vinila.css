@@ -100,6 +100,17 @@ footer *{
 .logomenu img{
 	margin-top: 12px;
 }
+
+.affix .logomenu img{
+	display: block;
+	opacity: 1;
+}
+.logomenu img{
+	display: none;
+    -webkit-transition: opacity 1s ease-out;
+    opacity: 0; 
+}
+
 .nav-main{
 	float: left;
 }
