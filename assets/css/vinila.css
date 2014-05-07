@@ -92,6 +92,7 @@ footer *{
 }
 .menuprin nav ul li a{
 	margin: 0 20px;
+	text-transform: uppercase;
 }
 .menuprin nav ul li a:hover{
 	background: transparent;
@@ -446,6 +447,7 @@ footer form input.button{
 }
 .widget_ns_mailchimp h3{
 	font-weight: normal;
+	padding-top: 9px;
 }
 
 #ns_widget_mailchimp_form-2 p {
