@@ -239,7 +239,7 @@ footer *{
 	margin-top: 70px;
 }
 .producto {
-    margin-bottom: 70px;
+    margin-bottom: 35px;
     list-style: none;
     position: relative;
 }
@@ -261,9 +261,9 @@ footer *{
 .producto .productthumb img{
 	height: 100%;
     width: 100%;
-    webkit-box-shadow: 0px 10px 9px -4px rgba(87,87,87,0.75);
-	-moz-box-shadow: 0px 10px 9px -4px rgba(87,87,87,0.75);
-	box-shadow: 0px 10px 9px -4px rgba(87,87,87,0.75);
+    webkit-box-shadow: 0px 10px 9px -4px rgba(150,150,150,0.1);
+	-moz-box-shadow: 0px 10px 9px -4px rgba(150,150,150,0.1);
+	box-shadow: 0px 10px 9px -4px rgba(150,150,150,0.1);
 }
 .producto .productthumb:hover .contenthover{
 	background: green;
@@ -287,7 +287,7 @@ footer *{
 
 }
 .hoverproduct{
-	margin-top: 35px;
+	margin-top: 10px;
 	text-align: right;
 }
 .hoverproduct .product-price .amount, .hoverproduct .product-price .price{
@@ -369,7 +369,7 @@ footer *{
 	font-size: 25px;
 }
 .price-and-purchase{
-	margin: 20px 0;
+	margin: 40px 0;
 }
 .price-and-purchase header{
 	float: left;
