@@ -533,9 +533,12 @@ footer form input.button{
     margin-top: 30px;
     padding: 12px;
     width: 100px;
+    border-radius: 0;
+    border-color: #ab2d2a;
 }
 .thumbnails{
 	display: inline-block;
+	padding-left: 0;
 }
 /*QUITAR ESTAS LINEAS CUANDO HAYA MENU*/
 	/*.copyr {
