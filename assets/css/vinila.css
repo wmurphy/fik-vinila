@@ -357,10 +357,17 @@ footer *{
 	text-align: right;
 }
 .fik_add_cart .input-mini{
-	width: 20px;
 	border: none;
 	color: #808080;
 }
+
+.fik_add_cart select{
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	-webkit-appearance: none;
+}
+
 .fik_product .entry-title{
 	color: #ab2d2a;
 	text-align: left;
