@@ -25,7 +25,7 @@
             </div>
             <?php the_product_gallery_thumbnails('150-thumbnail', array('class'=>'img-responsive'), 'full'); ?>
         <?php endif; ?>
-        <h3>Destacados</h3>
+        <h3>Te puede interesar</h3>
         <hr>
         <?php dynamic_sidebar( 'sidebar-textproduct' ); ?>
         </div>
