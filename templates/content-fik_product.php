@@ -20,14 +20,10 @@
             <div class="product-image-frame">
                 <?php
                     // We print the post thumbnail (if it exists) with a maximum size of 620px x 9999px:
-                    the_post_thumbnail('post-thumbnail',array('data-zoom-image' => array_shift(array_values(wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'large' ))),'itemprop' => "image"));
+                    the_post_thumbnail('post-thumbnail',array('class'=>'img-responsive', 'id'=>'prod-img', 'data-zoom-image' => array_shift(array_values(wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'large' ))),'itemprop' => "image"));
                 ?>
             </div>
-            <?php 
-            // this function outputs a <ul> with class="product-image-thumbnails" where each <li> is a thumbnil that links to a biger image (sizes specified in function). 
-            // We also pass the size of the zoom image which url and size are returned as data attributes of the img. The last 2 sizes are the max width of the video thumbnail and the max width of a video embed
-            the_product_gallery_thumbnails(array(64,64) , array(620,9999), array(1240,930),64,620,FALSE); 
-            ?>
+            <?php the_product_gallery_thumbnails('150-thumbnail', array('class'=>'img-responsive'), 'full'); ?>
         <?php endif; ?>
         <h3>Destacados</h3>
         <hr>
@@ -35,6 +31,7 @@
         </div>
         
         <div class="price-and-purchase col-md-4 no-padding-left">
+            <div class="msgproduct"><?php echo fik_messages(); ?></div>
             <header>
                 <h1 itemprop="name" class="entry-title product-title"><?php the_title(); ?></h1>
             </header>
@@ -51,8 +48,7 @@
         </div>
                 
 		<div itemprop="description" class="entry-content col-md-5">
-			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentytwelve' ) ); ?>
-			<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>
+            <?php echo $post->post_content; ?>
 		</div><!-- .entry-content -->
 <div>
     <footer>
