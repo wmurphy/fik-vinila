@@ -20,7 +20,11 @@ class custom_post_type_page_template {
 
         if ( !is_page() ) :
             $id = get_queried_object_id();
-            $new_template = 'template-' . get_post_type() . $product_template_name . '.php';
+            if (is_archive() ) {
+                $new_template = 'archive-' . get_post_type() . $product_template_name . '.php';
+            } else {
+                $new_template = 'template-' . get_post_type() . $product_template_name . '.php';
+            }
             if ( $new_template && file_exists(get_query_template( 'page', $new_template )) ) :
                 $wp_query->is_page = 1;
                 $templates[] = $new_template;
