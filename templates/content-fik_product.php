@@ -43,13 +43,12 @@
                 <?php dynamic_sidebar( 'sidebar-4' ); ?>
             </div><!-- #secondary -->
             <?php endif; ?>
-            <?php the_excerpt(); ?>
-            <?php // the_content();?>
+            <div itemprop="description" class="entry-content">
+            <?php echo $post->post_content; ?>
+            </div><!-- .entry-content -->
         </div>
                 
-		<div itemprop="description" class="entry-content col-md-5">
-            <?php echo $post->post_content; ?>
-		</div><!-- .entry-content -->
+
 <div>
     <footer>
       <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
