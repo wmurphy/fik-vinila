@@ -43,3 +43,12 @@ function add_appearance_custom_css() {
 add_action('wp_head', 'add_appearance_custom_css');
 
 remove_action('wp_footer', 'fik_legal_terms_link', 100);
+
+add_theme_support( 'post-thumbnails' );
+
+function vinila_thumb() {
+    //add_image_size('460-thumbnail', 460, 9999, false); //square thumbnail
+    add_image_size('150-thumbnail', 150, 9999, false); //square thumbnail
+}
+
+add_action('after_setup_theme','vinila_thumb');
