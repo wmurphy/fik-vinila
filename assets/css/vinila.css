@@ -252,14 +252,8 @@ footer *{
 	color: #EF9D9A;
 }
 
-.producto .productthumb{
-	display: block;
-    padding-bottom: 40px;
-    width: 100%;
-}
-
-.producto .productthumb img{
-	height: 100%;
+.producto img{
+	height: auto;
     width: 100%;
     webkit-box-shadow: 0px 10px 9px -4px rgba(150,150,150,0.1);
 	-moz-box-shadow: 0px 10px 9px -4px rgba(150,150,150,0.1);
