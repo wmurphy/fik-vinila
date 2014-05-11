@@ -1,7 +1,7 @@
 	<?php if ( is_tax('store-section') || is_post_type_archive( 'fik_product' ) || is_home() || is_page_template( 'page-templates/store-front-page.php' ) || is_search() ) : // Only display product excerpt for home, archive page, store section and search ?>
         
         <li class="col-sm-4 producto <?php echo get_theme_mod( 'fik_product_thumb_type', 'fik2012-thumb-sq' ); ?>">
-            <a href="<?php the_permalink(); ?>" class="productthumb" title="<?php the_title(); ?>">
+            <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                 <?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'vinlia-square'); } ?>           
                 <div class="product-description">
                     <div class="col-xs-6 pull-right">
