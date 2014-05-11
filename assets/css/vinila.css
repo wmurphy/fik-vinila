@@ -276,7 +276,7 @@ footer *{
     position: absolute;
     width: 182px;
 }
-.hoverproduct h2{
+.product-description h2{
     font-family: 'Leelawadee'; 
 	text-transform: uppercase;
 	text-align: right;
@@ -286,11 +286,11 @@ footer *{
 	text-decoration: none;
 
 }
-.hoverproduct{
+.product-description{
 	margin-top: 10px;
 	text-align: right;
 }
-.hoverproduct .product-price .amount, .hoverproduct .product-price .price{
+.product-description .product-price .amount, .product-description .product-price .price{
 	width: 100%;
 	text-align: right;
 	color: #808080;
@@ -387,10 +387,10 @@ footer *{
 	margin: 20px 0 40px 0;
 	font-size: 12px;
 }
-.widget .hoverproduct h2{
+.widget .product-description h2{
 	font-size: 14px;
 }
-.widget .hoverproduct .product-price .amount, .hoverproduct .product-price .price{
+.widget .product-description .product-price .amount, .product-description .product-price .price{
 	font-size: 12px;
 }
 
@@ -428,6 +428,7 @@ footer .nav.f-menu > li > a{
 .copyr{
 	margin-top: 70px;
 	text-align: right;
+	padding-right: 35px;
 }
 footer form{
 	background: #ab2d2a;
@@ -558,7 +559,7 @@ footer form input.button{
 	.partelogo img{
 		height: 40px;
 	    margin-top: 10px;
-	    width: 70px;
+	    width: auto;
 	}
 	.logofooter {
 	    margin: 26px 0 0 0;
@@ -571,10 +572,10 @@ footer form input.button{
 	}
 }
 @media screen and (max-width: 1000px){
-	.hoverproduct h2 {
+	.product-description h2 {
     	font-size: 14px !important;
 	}
-	.hoverproduct .product-price .amount, .hoverproduct .product-price .price {
+	.product-description .product-price .amount, .product-description .product-price .price {
     	font-size: 21px !important;
 	}
 	.f-menu{
