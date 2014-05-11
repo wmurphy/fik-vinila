@@ -243,10 +243,7 @@ footer *{
     list-style: none;
     position: relative;
 }
-.producto a{
-	display: inline-block;
-    width: 300px;
-}
+
 .producto a:hover{
 	text-decoration: none;
 	color: #EF9D9A;
