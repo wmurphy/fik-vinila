@@ -286,8 +286,22 @@ footer *{
 	text-decoration: none;
 
 }
+
+.producto h2.product-title{
+	margin-top: 0;
+	padding-top: 0;
+	font-size: 18px !important;
+}
+
+.producto .product-sku {
+	font-size: 11px;
+}
+.producto .product-price{
+	font-size: 16px;
+}
+
 .product-description{
-	margin-top: 10px;
+	margin-top: 20px;
 	text-align: right;
 }
 .product-description .product-price .amount, .product-description .product-price .price{
@@ -576,7 +590,7 @@ footer form input.button{
     	font-size: 14px !important;
 	}
 	.product-description .product-price .amount, .product-description .product-price .price {
-    	font-size: 21px !important;
+    	font-size: 21px;
 	}
 	.f-menu{
 		display: inline-block;
