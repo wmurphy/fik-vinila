@@ -10,6 +10,7 @@
                     </div>
                     <div class="col-xs-6">
                         <div class="product-sku"><?php print fik_product_sku(); ?></div>
+                        <div class="product-tags"><?php the_tags(''); ?></div>
                     </div>
                 </div>
             </a>
