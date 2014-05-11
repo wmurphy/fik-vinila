@@ -296,7 +296,7 @@ footer *{
 .producto .product-sku {
 	font-size: 11px;
 }
-.producto .product-price{
+.producto .product-description .product-price .amount, .producto  .product-description .product-price .price{
 	font-size: 16px;
 }
 
