@@ -235,11 +235,19 @@ footer *{
 }*/
 /*LIST PRODUCTS*/
 
+.tax-store-section .page-header {
+	display: none;
+}
+
+.tax-store-section .main {
+	padding-top: 35px;
+}
+
 .post-type-archive .wrap{
 	margin-top: 70px;
 }
 .producto {
-    margin-bottom: 35px;
+    margin-bottom: 45px;
     list-style: none;
     position: relative;
 }
@@ -286,13 +294,21 @@ footer *{
 
 .producto .product-sku {
 	font-size: 11px;
+	text-align: left;
 }
 .producto .product-description .product-price .amount, .producto  .product-description .product-price .price{
 	font-size: 16px;
 }
 
+.product-tags{
+	text-align: left;
+	font-size: 11px;
+}
+.product-tags a{
+	color: #808080;
+}
 .product-description{
-	margin-top: 20px;
+	margin-top: 30px;
 	text-align: right;
 }
 .product-description .product-price .amount, .product-description .product-price .price{
