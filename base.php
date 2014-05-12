@@ -12,8 +12,8 @@
   ?>
 <?php if(is_front_page()):?>
    <div class="wrap" role="document">
-    <div class="">
-      <main class="main <?php echo roots_main_class(); ?> no-padding" role="main">
+    <div class="content row">
+      <main class="main <?php echo roots_main_class(); ?>" role="main">
 <?php else:?>
     <div class="wrap container" role="document">
       <div class="content row">
