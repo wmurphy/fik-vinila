@@ -17,7 +17,7 @@
     <div class="col-lg-12 menuprin">
       <div class="container">
       <div class="logomenu col-sm-2">
-        <a href="/" title="Vinila Fabrics"><img src="/wp-content/themes/fik-vinila/assets/img/logomenu.png" alt="Logo Vinila" title="Logo Vinila"></a>
+        <a href="/" title="Vinila Fabrics"><img src="/wp-content/themes/fik-vinila/assets/img/logomenu.png" alt="Vinila Fabrics" title="Home"></a>
       </div>
       <nav class="nav-main col-sm-8" role="navigation">
         <?php
