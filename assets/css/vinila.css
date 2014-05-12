@@ -387,7 +387,6 @@ footer *{
 }
 
 .fik_add_cart .controls{
-    width: 200px;
 	display: inline;
 	float: right;
 	text-align: right;
@@ -395,6 +394,7 @@ footer *{
 .fik_add_cart .input-mini{
 	border: none;
 	color: #808080;
+	text-align: right;
 }
 
 .fik_add_cart select{
@@ -402,6 +402,7 @@ footer *{
 	border-radius: 0;
 	background: transparent;
 	-webkit-appearance: none;
+	width: 75PX;
 }
 
 .fik_product .entry-title{
