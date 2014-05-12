@@ -39,7 +39,7 @@ function roots_theme_activation_options_add_page() {
     }
   }
 }
-add_action('admin_menu', 'roots_theme_activation_options_add_page', 50);
+//add_action('admin_menu', 'roots_theme_activation_options_add_page', 50);
 
 function roots_get_theme_activation_options() {
   return get_option('roots_theme_activation_options');
@@ -207,7 +207,7 @@ function roots_theme_activation_action() {
 
   update_option('roots_theme_activation_options', $roots_theme_activation_options);
 }
-add_action('admin_init','roots_theme_activation_action');
+//add_action('admin_init','roots_theme_activation_action');
 
 function roots_deactivation() {
   delete_option('roots_theme_activation_options');
