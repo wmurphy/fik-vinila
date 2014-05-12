@@ -391,7 +391,6 @@ footer *{
 
 .fik_product .entry-title{
 	color: #ab2d2a;
-	text-align: left;
 	text-transform: uppercase;
 	margin:0;
 	font-size: 25px;
@@ -408,11 +407,24 @@ footer *{
 	margin: 20px 0 40px 0;
 	font-size: 12px;
 }
+.guide {
+	text-align: right;
+}
+.entry-content {
+	color: #808080;
+}
 .widget .product-description h2{
 	font-size: 14px;
 }
 .widget .product-description .product-price .amount, .product-description .product-price .price{
 	font-size: 12px;
+}
+
+.widget_social_widget h3{
+	float: left;
+}
+.widget_social_widget .tssw-list{
+	float: right;
 }
 
 /*footer*/

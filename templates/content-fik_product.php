@@ -41,7 +41,7 @@
             <header class="col-sm-6">
                 <h1 itemprop="name" class="entry-title product-title"><?php the_title(); ?></h1>
             </header>
-            <div class="col-sm-12">
+            <div class="col-sm-6">
                 <?php the_fik_price(); ?>
             </div>
             <div class="col-xs-6 ref">
