@@ -29,7 +29,7 @@
                     the_post_thumbnail('post-thumbnail',array('class'=>'img-responsive', 'id'=>'prod-img', 'data-zoom-image' => array_shift(array_values(wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'large' ))),'itemprop' => "image"));
                 ?>
             </div>
-            <?php the_product_gallery_thumbnails('300-thumbnail', array('class'=>'img-responsive'), 'full'); ?>
+            <?php the_product_gallery_thumbnails('300-thumbnail'); ?>
         <?php endif; ?>
         <h3>Te puede interesar</h3>
         <hr>
