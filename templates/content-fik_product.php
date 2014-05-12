@@ -49,18 +49,18 @@
                 <div class="product-tags"><?php the_tags(''); ?></div>
             </div>
             <div class="col-xs-6 guide">guia de tallas</div>
-            <div class="col-sm-12">
+            <div class="col-xs-12">
             <?php the_fik_add_to_cart_button(); ?>
             </div>
             <?php if ( is_active_sidebar( 'sidebar-4' ) ) : ?>
-            <div id="product-secondary" class="widget-area col-sm-12" role="complementary">
+            <div id="product-secondary" class="widget-area col-xs-12" role="complementary">
                 <?php dynamic_sidebar( 'sidebar-4' ); ?>
             </div><!-- #secondary -->
             <?php endif; ?>
-            <div itemprop="description" class="entry-content col-sm-12">
+            <div itemprop="description" class="entry-content col-xs-12">
             <?php echo $post->post_content; ?>
             </div><!-- .entry-content -->
-            <div class="col-sm-12">
+            <div class="col-xs-12">
             <?php dynamic_sidebar( 'sidebar-textproduct' ); ?>
             </div>
         </div>
