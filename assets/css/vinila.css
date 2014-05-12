@@ -87,7 +87,6 @@ footer *{
 	color: #d7d2c5;
 }
 .menuprin nav ul{
-	width: 580px;
 	margin: 0 auto;
 }
 .menuprin nav ul li a{
@@ -98,6 +97,11 @@ footer *{
 	background: transparent;
 	color: #d7d2c5;
 }
+.menuprin nav ul li.menu-vinila-world a {
+	text-transform: lowercase;
+}
+
+.menuprin 
 .logomenu img{
 	margin-top: 12px;
 }
@@ -126,12 +130,11 @@ footer *{
 }
 .bolsa .menu-bag li a{
 	font-family: 'Leelawadee';
-	padding: 15px 0 0 35px;
 	text-transform: lowercase;
-	height: 50px;
-	padding-left: 55px;
-	color: white;
-	background: url('../img/bag.png') scroll no-repeat center left transparent;
+	padding-left: 50px;
+	font-size: 18px;
+	color: #d7d2c5;
+	background: url('../img/bag.png') no-repeat center left transparent;
 }
 .bolsa .menu-bag li a:hover, .lang li a:hover, .f-menu li a:hover{
 	text-decoration: underline;
