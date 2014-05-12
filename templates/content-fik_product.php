@@ -21,7 +21,7 @@
   <article itemscope itemtype="http://schema.org/Product" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     
 <div class="container">
-        <div class="product-gallery col-md-8">
+        <div class="product-gallery col-sm-7">
         <?php if(has_post_thumbnail()) : ?>
             <div class="product-image-frame">
                 <?php
@@ -36,28 +36,33 @@
         
         </div>
         
-        <div class="price-and-purchase col-md-4 no-padding-left">
-            <div class="msgproduct"><?php echo fik_messages(); ?></div>
-            <header>
+        <div class="price-and-purchase col-sm-5">
+            <div class="col-sm-12 product-msg"><?php echo fik_messages(); ?></div>
+            <header class="col-sm-6">
                 <h1 itemprop="name" class="entry-title product-title"><?php the_title(); ?></h1>
             </header>
-            <?php the_fik_price(); ?>
-            <div class="col-xs-6">
+            <div class="col-sm-12">
+                <?php the_fik_price(); ?>
+            </div>
+            <div class="col-xs-6 ref">
                 <div class="product-sku"><?php print fik_product_sku(); ?></div>
                 <div class="product-tags"><?php the_tags(''); ?></div>
             </div>
-            <div class="col-xs-6">guia de tallas</div>
+            <div class="col-xs-6 guide">guia de tallas</div>
+            <div class="col-sm-12">
             <?php the_fik_add_to_cart_button(); ?>
-            
+            </div>
             <?php if ( is_active_sidebar( 'sidebar-4' ) ) : ?>
-            <div id="product-secondary" class="widget-area" role="complementary">
+            <div id="product-secondary" class="widget-area col-sm-12" role="complementary">
                 <?php dynamic_sidebar( 'sidebar-4' ); ?>
             </div><!-- #secondary -->
             <?php endif; ?>
-            <div itemprop="description" class="entry-content">
+            <div itemprop="description" class="entry-content col-sm-12">
             <?php echo $post->post_content; ?>
             </div><!-- .entry-content -->
+            <div class="col-sm-12">
             <?php dynamic_sidebar( 'sidebar-textproduct' ); ?>
+            </div>
         </div>
                 
 
