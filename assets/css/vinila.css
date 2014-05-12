@@ -88,6 +88,9 @@ footer *{
 }
 .menuprin nav ul{
 	margin: 0 auto;
+	display: table;
+    table-layout: fixed;
+    float:none;
 }
 .menuprin nav ul li a{
 	margin: 0 20px;
