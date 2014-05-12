@@ -52,7 +52,7 @@ add_theme_support( 'post-thumbnails' );
 
 function vinila_thumb() {
     //add_image_size('460-thumbnail', 460, 9999, false); //square thumbnail
-    add_image_size('150-thumbnail', 150, 9999, false); //square thumbnail
+    add_image_size('300-thumbnail', 300, 9999, false); //square thumbnail
 }
 
 add_action('after_setup_theme','vinila_thumb');
