@@ -33,7 +33,7 @@
         <?php endif; ?>
         <h3>Te puede interesar</h3>
         <hr>
-        <?php dynamic_sidebar( 'sidebar-textproduct' ); ?>
+        
         </div>
         
         <div class="price-and-purchase col-md-4 no-padding-left">
@@ -42,6 +42,11 @@
                 <h1 itemprop="name" class="entry-title product-title"><?php the_title(); ?></h1>
             </header>
             <?php the_fik_price(); ?>
+            <div class="col-xs-6">
+                <div class="product-sku"><?php print fik_product_sku(); ?></div>
+                <div class="product-tags"><?php the_tags(''); ?></div>
+            </div>
+            <div class="col-xs-6">guia de tallas</div>
             <?php the_fik_add_to_cart_button(); ?>
             
             <?php if ( is_active_sidebar( 'sidebar-4' ) ) : ?>
@@ -52,6 +57,7 @@
             <div itemprop="description" class="entry-content">
             <?php echo $post->post_content; ?>
             </div><!-- .entry-content -->
+            <?php dynamic_sidebar( 'sidebar-textproduct' ); ?>
         </div>
                 
 
