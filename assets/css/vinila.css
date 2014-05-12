@@ -25,6 +25,9 @@ body *{
 .main{
 	background:#fff; 
 }
+.main{
+	padding-top: 35px;
+}
 footer *{
 	color: #ab2d2a;
 }
@@ -204,6 +207,9 @@ footer *{
 .home .page-header{
 	display: none;
 }
+.contacto .page-header{
+	display: none;
+}
 /*HOME CONTENT*/
 .element{
 	display: inline-block;
@@ -306,6 +312,7 @@ footer *{
 .product-tags{
 	text-align: left;
 	font-size: 11px;
+	padding-top: 18px;
 }
 .product-tags a{
 	color: #808080;
@@ -450,6 +457,7 @@ footer *{
 }
 footer{
 	background: #d7d2c5; /*marron del pie*/
+	margin-top: 35px;
 }
 .f-menu{
 	background: whitesmoke;
