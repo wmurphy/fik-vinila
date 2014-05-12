@@ -335,14 +335,19 @@ footer *{
     padding:0;
    	color: #808080;
    	font-size: 25px;
+   	float: right;
 
 }
 .fik_product .price .amount{
 	font-size: 25px;
 	color: #808080;
 }
+.ref, .guide {
+	margin-top: 25px;
+}
+
 .fik_add_cart{
-	margin: 60px 0;
+	margin: 25px 0 50px 0;
 }
 .fik_add_cart .control-label{
 	text-transform: uppercase;
@@ -404,9 +409,13 @@ footer *{
 }
 .price-and-purchase p{
 	color: #808080;
-	margin: 20px 0 40px 0;
-	font-size: 12px;
+	line-height: 1.5;
 }
+.price-and-purchase p strong{
+	color: #808080;
+	line-height: 1.5;
+}
+
 .guide {
 	text-align: right;
 }
@@ -420,8 +429,13 @@ footer *{
 	font-size: 12px;
 }
 
+.widget_social_widget {
+	padding-top: 20px;
+}
+
 .widget_social_widget h3{
 	float: left;
+	margin: 12px 0;
 }
 .widget_social_widget .tssw-list{
 	float: right;
