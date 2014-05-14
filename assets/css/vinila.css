@@ -104,6 +104,9 @@ footer *{
 	text-transform: lowercase;
 }
 
+.nav-main .lower a {
+	text-transform: lowercase;
+}
 .menuprin 
 .logomenu img{
 	margin-top: 12px;
