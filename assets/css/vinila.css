@@ -148,6 +148,10 @@ footer *{
 	color: #ab2d2a;
 }
 
+.cartitems {
+	color: #d7d2c5;
+}
+
 .nav > li > a:hover, .nav > li > a:focus{
 	background-color: transparent;
 }

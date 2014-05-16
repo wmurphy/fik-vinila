@@ -146,10 +146,6 @@ jQuery(document).ready(function() {
             if (itemsQuantity > 0){
                 jQuery('.cesta').append(' <span class="cartitems">(' + itemsQuantity + ')</span>');
             }
-
-        } else{
-            //for debugging
-            jQuery('.cesta').append(' <span class="cartitems">(8)</span>');
         }
     }
 
