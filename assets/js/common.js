@@ -143,10 +143,11 @@ jQuery(document).ready(function() {
             jQuery.each( cart.items, function( key, value ) {
                 itemsQuantity = itemsQuantity + cart.items[key].quantity * 1 ;
             });
-        } else {
-            itemsQuantity = "&nbsp";
-        }
-        jQuery('.cesta').append(' <span class="badge">' + itemsQuantity + '</span>');
+            if (itemsQuantity > 0){
+                jQuery('.cesta').append(' <span class="cartitems">(' + itemsQuantity + ')</span>');
+            }
+
+        } 
     }
 
     jQuery("input[name='ns_widget_mailchimp_email']").attr("placeholder", "Email");
