@@ -5,6 +5,7 @@
 ?>
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<div class="msgproduct"><?php echo fik_messages(); ?></div>
 		<header class="entry-header">
 			<h1 class="entry-title"><?php _e('Cart','twentytwelve'); // the_title(); ?></h1>
 		</header>
