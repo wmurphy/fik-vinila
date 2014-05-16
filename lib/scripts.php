@@ -37,6 +37,13 @@ function roots_scripts() {
   wp_register_script('fik_product_js', get_template_directory_uri() . '/assets/js/fik_product.js', array(), null, false);
   wp_enqueue_script('fik_common');
   wp_enqueue_script('fik_product_js');
+  if ( 'fik_product' == get_post_type() ){ 
+    wp_register_script('elevateZoom', get_template_directory_uri() . '/assets/js/plugins/jquery.elevateZoom.min.js', array(), null, false);
+    wp_enqueue_script('elevateZoom');
+
+    wp_register_script('zoom', get_template_directory_uri() . '/assets/js/plugins/zoom.js', array(), null, false);
+    wp_enqueue_script('zoom');
+  }
 }
 add_action('wp_enqueue_scripts', 'roots_scripts', 100);
 
