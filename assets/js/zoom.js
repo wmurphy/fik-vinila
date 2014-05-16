@@ -4,7 +4,7 @@
 $(window).load(activatezoom);
 $(window).resize(function(){$(".zoomContainer").remove(); activatezoom();});
 
-ffunction activatezoom(zoomimagewidth) {
+function activatezoom(zoomimagewidth) {
     jQuery('.zoomContainer').remove();
     if (jQuery('div.product-image-frame img').width() < (zoomimagewidth)*0.77) {
         jQuery('div.product-image-frame img').elevateZoom({
