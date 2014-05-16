@@ -147,7 +147,10 @@ jQuery(document).ready(function() {
                 jQuery('.cesta').append(' <span class="cartitems">(' + itemsQuantity + ')</span>');
             }
 
-        } 
+        } else{
+            //for debugging
+            jQuery('.cesta').append(' <span class="cartitems">(8)</span>');
+        }
     }
 
     jQuery("input[name='ns_widget_mailchimp_email']").attr("placeholder", "Email");
