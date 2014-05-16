@@ -141,6 +141,7 @@ footer *{
 	font-size: 18px;
 	color: #d7d2c5;
 	background: url('../img/bag.png') no-repeat center left transparent;
+	display: inline-block;
 }
 .bolsa .menu-bag li a:hover, .lang li a:hover, .f-menu li a:hover{
 	text-decoration: underline;
