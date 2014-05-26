@@ -53,7 +53,7 @@
             
 
             <div class="sizesandshippingsmodal">
-            <div class="sizes col-xs-6 panel panel-default">
+            <div class="sizes col-xs-12 panel panel-default">
                 <div class="panel-body">
                     <button type="button" class="close">&times;</button>
                     <?php
