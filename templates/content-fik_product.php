@@ -48,7 +48,7 @@
                 <div class="product-sku"><?php print fik_product_sku(); ?></div>
                 <div class="product-tags"><?php the_tags(''); ?></div>
             </div>
-            <div class="col-xs-6 guide">guia de tallas</div>
+            <div class="col-xs-6 guide"><a href="/guia/">guia de tallas</a></div>
             <div class="col-xs-12">
             <?php the_fik_add_to_cart_button(); ?>
             </div>
