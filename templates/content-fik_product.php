@@ -48,7 +48,23 @@
                 <div class="product-sku"><?php print fik_product_sku(); ?></div>
                 <div class="product-tags"><?php the_tags(''); ?></div>
             </div>
-            <div class="col-xs-6 guide"><a href="/guia/">guia de tallas</a></div>
+
+            <div class="col-xs-6 guide"><a href="/guia-de-tallas/" class="sizesinformation"><?php _e('Guía de tallas', 'fik-bettina') ?></a></div>
+            
+
+            <div class="sizesandshippingsmodal">
+            <div class="sizes col-xs-6 panel panel-default">
+                <div class="panel-body">
+                    <button type="button" class="close">&times;</button>
+                    <?php
+                        $shipping_page = get_page_by_title('Guía de tallas');
+                        echo $shipping_page->post_content;
+                    ?>
+                </div>
+            </div>
+            </div>
+
+
             <div class="col-xs-12">
             <?php the_fik_add_to_cart_button(); ?>
             </div>
