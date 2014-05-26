@@ -449,13 +449,7 @@ footer *{
 }
 
 .sizesandshippingsmodal .sizes, .sizesandshippingsmodal .shippings {
-    position: absolute;
     z-index: 1;
-    top: -50px;
-}
-
-.sizesandshippingsmodal .shippings {
-    top: -20px;
 }
 
 .sizesandshippingsmodaloverlay {
@@ -465,6 +459,16 @@ footer *{
     top: 0;
     left: 0;
     z-index: 1;
+}
+.panel{
+	margin-bottom: 0;
+	box-shadow:none;
+	-webkit-box-shadow: none;
+}
+
+.panel-default {
+	border: 3px solid #d7d2c5;
+	border-radius: 0;
 }
 
 
