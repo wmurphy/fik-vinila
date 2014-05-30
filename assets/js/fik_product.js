@@ -1,13 +1,13 @@
 function activatezoom(zoomimagewidth) {
-    jQuery('.zoomContainer').remove();
-    if (jQuery('div.product-image-frame img').width() < (zoomimagewidth)*0.77) {
-        jQuery('div.product-image-frame img').elevateZoom({
+    $('.zoomContainer').remove();
+    if ($('div.product-image-frame img').width() < (zoomimagewidth)*0.77) {
+        $('div.product-image-frame img').elevateZoom({
             zoomType : "lens",
             lensShape : "square",
             lensSize : 250
         });
     } else {
-        jQuery('.zoomLens').css('opacity','0');
+        $('.zoomLens').css('opacity','0');
     }
 }
 
