@@ -10,7 +10,7 @@
                     </div>
                     <div class="col-xs-6">
                         <div class="product-sku"><?php print fik_product_sku(); ?></div>
-                        <div class="product-tags"><?php the_tags(''); ?></div>
+                        <div class="product-tags"><?php echo strtolower(get_the_term_list($post->ID, 'store-section', '', ', ', '' )); ?></div>
                     </div>
                 </div>
             </a>
@@ -46,7 +46,7 @@
             </div>
             <div class="col-xs-6 ref">
                 <div class="product-sku"><?php print fik_product_sku(); ?></div>
-                <div class="product-tags"><?php the_tags(''); ?></div>
+                <div class="product-tags"><?php echo strtolower(get_the_term_list($post->ID, 'store-section', '', ', ', '' )); ?></div>
             </div>
 
             <div class="col-xs-6 guide"><a href="/guia-de-tallas/" class="sizesinformation"><?php _e('Guía de tallas', 'fik-bettina') ?></a></div>
