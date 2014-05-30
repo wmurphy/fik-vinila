@@ -51,7 +51,12 @@ $(document).ready(function() {
   $(".product-image-thumbnails a").click(function(event) {
     $("#prod-img").attr("src", $(this).attr("data-zoom-image"));
     $("#prod-img").data("zoom-image", $(this).data("zoom-image"));
-    activatezoom($('div.product-image-frame img').data('zoomimagewidth'));
+    $('.zoomContainer').remove();
+    $('div.product-image-frame img').elevateZoom({
+      zoomType : "lens",
+      lensShape : "square",
+      lensSize : 250
+    });
     // prevent href
     return false;
   }); 
