@@ -15,6 +15,11 @@ $(document).ready(function() {
   $('.sizes').hide();
   $('.shippings').hide();
   $('.sizesandshippingsmodaloverlay').hide();
+  $('div.product-image-frame img').elevateZoom({
+    zoomType : "lens",
+    lensShape : "square",
+    lensSize : 250
+  });
 
   $('.sizesinformation').click(function(event) {
       event.preventDefault();
@@ -46,7 +51,7 @@ $(document).ready(function() {
   $(".product-image-thumbnails a").click(function(event) {
     $("#prod-img").attr("src", $(this).attr("data-zoom-image"));
     $("#prod-img").data("zoom-image", $(this).data("zoom-image"));
-    activatezoom(jQuery('div.product-image-frame img').data('zoomimagewidth'));
+    activatezoom($('div.product-image-frame img').data('zoomimagewidth'));
     // prevent href
     return false;
   }); 
