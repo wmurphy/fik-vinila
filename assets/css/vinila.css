@@ -269,7 +269,7 @@ footer *{
     position: relative;
 }
 
-.producto a:hover{
+.producto a:hover, .product-tags a:hover{
 	text-decoration: none;
 	color: #EF9D9A;
 }
