@@ -1,12 +1,12 @@
 <footer class="content-info" role="contentinfo">
 	<div class="container">
-		<div class="col-md-5">
+		<div class="col-md-6">
 			<div class="menu-footer">
 	        	<?php wp_nav_menu(array('theme_location' => 'footer-vinila', 'menu_class' => 'nav f-menu')); ?>
 	    	</div>
 		</div>
 		
-		<aside class="f-social col-md-7 pull-right">
+		<aside class="f-social col-md-6 pull-right">
             <div class="col-md-6">
 			<?php dynamic_sidebar('sidebar-news'); ?>
             </div>
