@@ -495,7 +495,7 @@ footer *{
 
 /*footer*/
 footer *{
-	font-size: 12px;
+	font-size: 8px;
 }
 footer{
 	background: #d7d2c5; /*marron del pie*/
@@ -506,7 +506,7 @@ footer{
 }
 .nav.f-menu{
 	background: transparent;
-	padding-top: 15px;
+	padding-top: 0px;
 }
 .nav.f-menu li{
 	display: inline;
@@ -514,30 +514,31 @@ footer{
     width: auto;
     text-transform: uppercase;
 }
-.logofooter{
-	margin-top: 29px;
+footer .menu-footer{
+}
+.fikstores-badge{
+    margin-top: 10px;
 }
 /*SOCIAL*/
 .nav li{
 	float: left;
 }
 footer .nav.f-menu > li > a{
-	padding: 10px 24px;
+	padding: 10px 10px;
 }
 .copyr{
-	margin-top: 70px;
 	text-align: right;
 	padding-right: 35px;
+    margin-top: 10px;
 }
 footer form{
 	background: #ab2d2a;
-	margin-top: 20px;
 	width: 100%;
-	height: 40px;
+	height: 31px;
 }
 footer form input{
 	margin-top: 3px;
-	height: 32px;
+	height: 26px;
 	width: 55%;
 	  margin-left: 4px;
 }
@@ -566,17 +567,13 @@ footer form input.button{
 .partelogo{
 	margin-top: -9px;
 }
-.social{
-	padding-top: 9px;
-	margin-bottom: 30px;
-}
 .social p{
 	text-transform: uppercase;
 	margin-bottom: 0;
 	margin-top: 10px;
 }
 .social li{
-    margin-right: 15px;
+    margin-left: 15px;
     width: 31px;
 }
 .social li a{
@@ -639,6 +636,10 @@ footer form input.button{
 	display: inline-block;
 	padding-left: 0;
 }
+.newsletter > h3{
+    display: none;
+}
+
 /*QUITAR ESTAS LINEAS CUANDO HAYA MENU*/
 	/*.copyr {
 	    margin-top: 95px;
