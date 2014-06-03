@@ -93,7 +93,6 @@ footer *{
 }
 .menuprin nav ul li a{
 	margin: 0 20px;
-	text-transform: uppercase;
 }
 .menuprin nav ul li a:hover{
 	background: transparent;
