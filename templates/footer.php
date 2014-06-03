@@ -20,8 +20,9 @@
 		</aside>
 	</div>
 </footer>
-        <div class="col-md-12 text-center">
-            <a href="http://fikstores.com/" title="tiendas online"><img class="replace-2x fikstores-badge" width="105" height="50" alt="Better ecommerce" src="/wp-content/themes/fik-vinila/assets/img/logofik.png"></a>
-        </div>
-
+<div class="container">
+    <div class="col-md-12 text-left">
+        <a href="http://fikstores.com/" title="tiendas online"><img class="replace-2x fikstores-badge" width="105" height="50" alt="Better ecommerce" src="/wp-content/themes/fik-vinila/assets/img/logofik.png"></a>
+    </div>
+</div>
 <?php wp_footer(); ?>

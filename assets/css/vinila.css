@@ -495,10 +495,9 @@ footer *{
 
 /*footer*/
 footer *{
-	font-size: 8px;
+	font-size: 9px;
 }
 footer{
-	background: #d7d2c5; /*marron del pie*/
 	margin-top: 35px;
 }
 .f-menu{
@@ -538,9 +537,9 @@ footer form{
 }
 footer form input{
 	margin-top: 3px;
-	height: 26px;
+	height: 23px;
 	width: 55%;
-	  margin-left: 4px;
+	margin-left: 4px;
 }
 footer form input.button{
 	width: 40%;
@@ -578,7 +577,7 @@ footer form input.button{
 }
 .social li a{
 	background:url('../img/social.png') scroll no-repeat 0 0 transparent;
-	text-indent: -99000px;
+	text-indent: 50px;
 	overflow: hidden;
 	background-position: -136px 0;
     height: 31px;
