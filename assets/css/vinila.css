@@ -19,9 +19,6 @@
        url('../fonts/leelawad.svg#svgFontName') format('svg'); /* Legacy iOS */
 
 }
-body *{
-	color: #ab2d2a;
-}
 .main{
 	background:#fff; 
 }
