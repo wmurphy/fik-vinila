@@ -1,4 +1,5 @@
 <footer class="content-info" role="contentinfo">
+    <hr>
 	<div class="container">
 		<div class="col-md-6">
 			<div class="menu-footer">
