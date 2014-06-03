@@ -63,7 +63,6 @@ footer *{
 	display: inline;
 	float: left;
 	width: auto;
-	text-transform: uppercase;
 }
 .nav.lang li a{
 	padding:5px;
