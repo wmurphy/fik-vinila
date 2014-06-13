@@ -3,7 +3,11 @@
 	<div class="container">
 		<div class="col-md-6">
 			<div class="menu-footer">
-	        	<?php wp_nav_menu(array('theme_location' => 'footer-vinila', 'menu_class' => 'nav f-menu')); ?>
+				<?php
+				if (has_nav_menu('footer-vinila')) {
+	        	 wp_nav_menu(array('theme_location' => 'footer-vinila', 'menu_class' => 'nav f-menu')); 
+	        	}
+	        	?>
 	    	</div>
 		</div>
 		

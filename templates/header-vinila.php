@@ -8,7 +8,11 @@
       </div> 
       <div class="col-sm-3 pull-right language">
           <div class="idioma">
-            <?php wp_nav_menu(array('theme_location' => 'language', 'menu_class' => 'nav lang')); ?>
+            <?php 
+            if (has_nav_menu('language')) {
+              wp_nav_menu(array('theme_location' => 'language', 'menu_class' => 'nav lang')); 
+            }
+            ?>
           </div>
 
         </div>
@@ -27,7 +31,11 @@
           ?>
       </nav>
       <div class="bolsa col-sm-2">
-        <?php wp_nav_menu(array('theme_location' => 'bag', 'menu_class' => 'nav menu-bag')); ?> 
+        <?php 
+        if (has_nav_menu('bag')) {
+          wp_nav_menu(array('theme_location' => 'bag', 'menu_class' => 'nav menu-bag')); 
+        }
+        ?> 
       </div>
     </div>
     </div>
