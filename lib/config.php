@@ -9,7 +9,7 @@ $header_template_name = 'header-vinila';
 
 // Footers
 // footer, footer-bootstrap-sticky
-$footer_template_name = 'footer';
+$footer_template_name = 'footer-bootstrap-sticky';
 
 // Products
 // right
