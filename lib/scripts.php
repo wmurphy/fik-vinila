@@ -44,6 +44,14 @@ function roots_scripts() {
     wp_register_script('zoom', get_template_directory_uri() . '/assets/js/zoom.js', array(), null, false);
     wp_enqueue_script('zoom');
   }
+
+  if(is_front_page()){
+    wp_register_script('glide_slider', get_template_directory_uri() . '/assets/js/jquery.glide.js', array(), null, false);
+    wp_enqueue_script('glide_slider');
+    wp_enqueue_style('glide_styles', get_template_directory_uri() . '/assets/css/slider.css', false, null);
+  }
+
+
 }
 add_action('wp_enqueue_scripts', 'roots_scripts', 100);
 
