@@ -1,33 +1,32 @@
 <footer class="content-info" role="contentinfo">
-    <hr>
 	<div class="container">
-		<div class="col-md-6">
-			<div class="menu-footer">
+    	<div class="col-md-7">
 				<?php
 				if (has_nav_menu('footer-vinila')) {
-	        	 wp_nav_menu(array('theme_location' => 'footer-vinila', 'menu_class' => 'nav f-menu')); 
+	        	 wp_nav_menu(array('theme_location' => 'footer-vinila', 'menu_class' => 'nav-footer')); 
 	        	}
 	        	?>
-	    	</div>
-		</div>
+	    </div>
 		
-		<aside class="f-social col-md-6 pull-right">
-            <div class="col-md-6">
-			<?php dynamic_sidebar('sidebar-news'); ?>
-            </div>
-			<div class="social col-md-6 text-right">     
+           <div class="col-md-3">  
 			  	<?php
 		        	if (has_nav_menu('social-menu')) :
-		          		wp_nav_menu(array('theme_location' => 'social-menu', 'menu_class' => 'nav social pull-right'));
+		          		wp_nav_menu(array('theme_location' => 'social-menu', 'menu_class' => 'social'));
 		        	endif;
 		      	?>
-	    	</div>
-		</aside>
+        
+                </div>
+          
+          <div class="col-md-2">
+                
+                 <div class="fiklogo">
+        <a href="http://fikstores.com/" title="tiendas online"><img class="replace-2x fikstores-badge" width="100" height="10" alt="Powered by fikstores" src="./wp-content/uploads/img/logofik_new.png"></a>
+    </div>       
+          </div>   
 	</div>
+    
+          
+    
 </footer>
-<div class="container">
-    <div class="col-md-12 text-left">
-        <a href="http://fikstores.com/" title="tiendas online"><img class="replace-2x fikstores-badge" width="105" height="50" alt="Better ecommerce" src="/wp-content/themes/fik-vinila/assets/img/logofik.png"></a>
-    </div>
-</div>
+
 <?php wp_footer(); ?>

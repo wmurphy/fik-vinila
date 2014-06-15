@@ -32,6 +32,10 @@ function roots_scripts() {
   wp_enqueue_script('modernizr');
   wp_enqueue_script('jquery');
   wp_enqueue_script('roots_scripts');
+  
+  wp_register_script('responsive_menu', get_template_directory_uri() . '/assets/js/jquery.fs.naver.js', array(), null, false);
+  wp_enqueue_script('responsive_menu');
+  wp_enqueue_style('responsive_menu_styles', get_template_directory_uri() . '/assets/css/jquery.fs.naver.css', false, null);
 
   wp_register_script('fik_common', get_template_directory_uri() . '/assets/js/common.js');
   wp_register_script('fik_product_js', get_template_directory_uri() . '/assets/js/fik_product.js', array(), null, false);
@@ -43,6 +47,8 @@ function roots_scripts() {
 
     wp_register_script('zoom', get_template_directory_uri() . '/assets/js/zoom.js', array(), null, false);
     wp_enqueue_script('zoom');
+	
+	
   }
 
   if(is_front_page()){

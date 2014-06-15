@@ -136,6 +136,8 @@ function unserialize (data) {
 }
 
 jQuery(document).ready(function() {
+	jQuery(".nav-main").naver();
+
     if ((jQuery('.cesta').length>0) && (fik_cart_name.length>0)) {
         if (typeof jQuery.cookie(fik_cart_name) != 'undefined') {
             var cart = unserialize(decodeURIComponent(jQuery.cookie(fik_cart_name)));
@@ -155,4 +157,6 @@ jQuery(document).ready(function() {
         e.preventDefault();
     }
     );
+
 });
+

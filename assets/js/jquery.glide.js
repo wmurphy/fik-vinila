@@ -12,7 +12,7 @@
 		defaults = {
 
 			// {Int or Bool} False for turning off autoplay
-			autoplay: 4000,
+			autoplay: 8000,
 			// {Bool} Pause autoplay on mouseover slider
 			hoverpause: false,
 
@@ -20,7 +20,7 @@
 			circular: true,
 
 			// {Int} Animation time
-			animationDuration: 500,
+			animationDuration: 1000,
 			// {String} Animation easing function
 			animationTimingFunc: 'cubic-bezier(0.165, 0.840, 0.440, 1.000)',
 
@@ -392,7 +392,8 @@
 			 * Set transition
 			 */
 			'setTransition': function() {
-				$(this).css( prefix + 'transition', prefix + 'transform ' + o.animationDuration + 'ms ' + o.animationTimingFunc);
+			$(this).css( prefix + 'transition', prefix + 'transform ' + o.animationDuration + 'ms ' + o.animationTimingFunc);
+			
 			},
 
 			/**
