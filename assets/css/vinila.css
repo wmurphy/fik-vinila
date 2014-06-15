@@ -70,7 +70,11 @@ table {
          url('../fonts/leelawdb.svg#leelawadeebold') format('svg');
     font-weight: normal;
     font-style: normal;}
-
+body{
+	font-family: 'vinila', sans-serif;
+	font-weight:normal;
+	color:#000;
+	}
 h1{
 	font-family: 'vinilabold', sans-serif;
 	font-weight:800;
@@ -275,5 +279,327 @@ footer{margin-bottom:20px;}
 }
 .social .gplus a:hover {
     background-position: -137px -33px;
+}
+
+
+/*PRODUCT PAGE*/
+
+.product-msg{display:none;}
+
+
+
+
+.affix .logomenu img {
+    display: block;
+    opacity: 1;
+}
+
+.bolsa {
+    float: left;
+}
+.bolsa .menu-bag li {
+    float: right;
+}
+.bolsa .menu-bag li a {
+    background: url("../img/bagnew.png") no-repeat scroll left center transparent;
+    color: #000;
+    display: inline-block;
+    font-family: 'vinila';
+    padding-left: 18px;
+    text-transform: uppercase;
+}
+.lang li a:hover, .f-menu li a:hover {
+    color: #922b2c;
+    text-decoration: none;
+}
+.bolsa .menu-bag li a:hover {
+     color: #922b2c;
+    text-decoration: none;
+}
+.cartitems {
+    color: #d7d2c5;
+}
+
+
+.caret {
+    border-left: 6px solid rgba(0, 0, 0, 0);
+    border-right: 6px solid rgba(0, 0, 0, 0);
+    border-top: 7px solid;
+    width: 6px;
+}
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+    background: none repeat scroll 0 0 rgba(171, 45, 42, 0.7);
+    color: #d7d2c5;
+    margin: 0;
+}
+.menuprin nav ul .icon-cart a {
+    text-transform: lowercase;
+}
+.gallery img {
+    width: 100%;
+}
+.home .page-header {
+    display: none;
+}
+.contacto .page-header {
+    display: none;
+}
+.element {
+    display: inline-block;
+    margin: 180px 0;
+    text-align: center;
+}
+.carousel-indicators {
+    bottom: -40px;
+}
+.carousel-indicators .active {
+    background: none repeat scroll 0 0 #ab2d2a;
+}
+.carousel-indicators li {
+    border: 1px solid #ab2d2a;
+}
+.carousel-inner img {
+    margin: 0 auto;
+}
+.tax-store-section .page-header {
+    display: none;
+}
+.tax-store-section .main {
+    padding-top: 35px;
+}
+.post-type-archive .wrap {
+    margin-top: 70px;
+}
+.producto {
+    list-style: none outside none;
+    margin-bottom: 45px;
+    position: relative;
+}
+.producto a:hover, .product-tags a:hover {
+    color: #ef9d9a;
+    text-decoration: none;
+}
+.producto img {
+    box-shadow: 0 10px 9px -4px rgba(150, 150, 150, 0.1);
+    height: auto;
+    width: 100%;
+}
+.producto .productthumb:hover .contenthover {
+    background: none repeat scroll 0 0 green;
+    bottom: 0;
+    color: #ffffff;
+    display: none;
+    height: 82px;
+    overflow: hidden;
+    padding: 120px 20px 20px;
+    position: absolute;
+    width: 182px;
+}
+.product-description h2 {
+    color: #ab2d2a;
+    display: inline-block;
+    font-family: 'vinila';
+    font-size: 21px;
+    text-align: right;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.producto h2.product-title {
+    font-size: 18px !important;
+    margin-top: 0;
+    padding-top: 0;
+}
+.producto .product-sku {
+    color: #ab2d2a;
+    font-size: 11px;
+    text-align: left;
+}
+.producto .product-description .product-price .amount, .producto .product-description .product-price .price {
+    font-size: 16px;
+}
+.product-tags {
+   
+    padding-top: 18px;
+    text-align: left;
+}
+.product-tags a {
+    color: #808080;
+}
+.product-description {
+    margin-top: 30px;
+    text-align: right;
+}
+.product-description .product-price .amount, .product-description .product-price .price {
+    color: #808080;
+    font-family: 'vinila';
+    font-size: 21px;
+    text-align: right;
+    width: 100%;
+}
+.product-gallery {
+    margin: 40px 0;
+}
+.product-gallery h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.fik_product .price {
+    color: #808080;
+    display: inline-block;
+    float: right;
+    font-size: 25px;
+    padding: 0;
+    text-align: right;
+    width: 50%;
+}
+.fik_product .price .amount {
+    color: #808080;
+    font-size: 25px;
+}
+.ref, .guide {
+    margin-top: 25px;
+}
+.fik_add_cart {
+    margin: 25px 0 50px;
+}
+.fik_add_cart .control-label {
+    color: #808080;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.fik_add_cart .btn {
+    background: none repeat scroll 0 0 #ab2d2a;
+    border: medium none;
+    border-radius: 0;
+    padding: 10px 0;
+    text-transform: uppercase;
+    width: 100%;
+}
+.fik_add_cart .product-quantity {
+    border: 3px solid #d7d2c5;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+.fik_add_cart .product-variations {
+    border: 3px solid #d7d2c5;
+    display: block;
+    margin: 20px 0;
+    padding: 12px 20px;
+    width: 100%;
+}
+.fik_add_cart .controls {
+    display: inline;
+    float: right;
+    text-align: right;
+}
+.fik_add_cart .input-mini {
+    border: medium none;
+    color: #808080;
+    text-align: right;
+}
+.fik_add_cart select {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    border-radius: 0;
+    width: 75px;
+}
+.fik_product .entry-title {
+    color: #ab2d2a;
+    font-size: 25px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.price-and-purchase {
+    margin: 40px 0;
+}
+.price-and-purchase header {
+    float: left;
+    width: 50%;
+}
+.price-and-purchase p {
+    color: #808080;
+    line-height: 1.5;
+}
+.price-and-purchase p strong {
+    color: #808080;
+    line-height: 1.5;
+}
+.sizesinformation {
+    color: #ab2d2a;
+}
+a.sizesinformation:hover {
+    color: #ef9d9a;
+    text-decoration: none;
+
+}
+.sizes {
+    display: none;
+}
+.sizesandshippingsmodal {
+    position: relative;
+}
+.sizesandshippingsmodal .sizes, .sizesandshippingsmodal .shippings {
+    z-index: 1;
+}
+.sizesandshippingsmodaloverlay {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.panel {
+    box-shadow: none;
+    margin-bottom: 0;
+}
+.panel-default {
+    border: 3px solid #d7d2c5;
+    border-radius: 0;
+}
+.guide {
+    text-align: right;
+}
+
+footer .menu-footer {
+}
+.fikstores-badge {
+    margin-top: 10px;
+}
+.nav li {
+    float: left;
+}
+footer .nav.f-menu > li > a {
+    padding: 10px;
+}
+.copyr {
+    margin-top: 10px;
+    padding-right: 35px;
+    text-align: right;
+}
+
+
+.partelogo {
+    margin-top: -9px;
+}
+
+.thumbnail {
+    border-color: #ab2d2a;
+    border-radius: 0;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    padding: 12px;
+    width: 28%;
+}
+.thumbnails {
+    display: inline-block;
+    padding-left: 0;
+}
+.newsletter > h3 {
+    display: none;
 }
 
