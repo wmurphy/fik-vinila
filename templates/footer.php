@@ -20,7 +20,7 @@
           <div class="col-md-2">
                 
                  <div class="fiklogo">
-        <a href="http://fikstores.com/" title="tiendas online"><img class="replace-2x fikstores-badge" width="100" height="10" alt="Powered by fikstores" src="./wp-content/themes/fik-vinila/assets/img/logofik_new.png"></a>
+        <a href="http://fikstores.com/" title="tiendas online"><img class="replace-2x fikstores-badge" width="100" height="10" alt="Powered by fikstores" src="<?php echo get_template_directory(); ?>/assets/img/logofik_new.png"></a>
     </div>       
           </div>   
 	</div>
