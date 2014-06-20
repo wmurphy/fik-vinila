@@ -703,7 +703,7 @@ body{font-size:90%;}
 }
 
 /* Tablet and PHone */
-@media (max-width:1000px) {
+@media (max-width:960px) {
 	
 body{font-size:90%;}
 .nav{text-align:center;margin:0 auto;padding-top:18px;}
