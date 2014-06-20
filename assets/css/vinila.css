@@ -706,7 +706,7 @@ body{font-size:90%;}
 .fiklogo,.social,.nav-footer{margin-top:20px;text-align:center;}		
 .fiklogo {position: static;}
 .nav li a{color:#fff !important;}
-.slider-nav {bottom: 250px !important;}
+.slider-nav {display:none;}
 }
 
 
