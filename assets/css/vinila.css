@@ -368,6 +368,15 @@ footer{padding-bottom:20px;}
     margin-top: 150px;
 }
 
+/* CART PAGE */
+
+.cart .main{
+    padding-top: 50px;
+}
+.cart header.entry-header{
+    display: none;
+}
+
 /************************************************/
 
 .affix .logomenu img {
