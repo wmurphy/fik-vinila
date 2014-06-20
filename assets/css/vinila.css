@@ -363,6 +363,11 @@ footer{padding-bottom:20px;}
     text-transform: uppercase;
     vertical-align: middle;}
 
+/* CONTACT PAGE */
+.contacto .main{
+    margin-top: 150px;
+}
+
 /************************************************/
 
 .affix .logomenu img {
