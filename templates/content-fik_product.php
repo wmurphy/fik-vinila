@@ -73,7 +73,7 @@
                 <?php dynamic_sidebar( 'sidebar-4' ); ?>
             </div><!-- #secondary -->
             <?php endif; ?>
-            <div itemprop="description" class="entry-content col-xs-12">
+            <div itemprop="description" class="text-left entry-content col-xs-12">
             <?php echo $post->post_content; ?>
             </div><!-- .entry-content -->
             <div class="col-xs-12">

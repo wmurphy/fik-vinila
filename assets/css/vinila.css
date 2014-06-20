@@ -74,6 +74,7 @@ body{
 	font-family: 'vinila', sans-serif;
 	font-weight:normal;
 	color:#000;
+	background:#fff;
 	}
 h1{
 	font-family: 'vinilabold', sans-serif;
@@ -122,7 +123,7 @@ a:hover{
 
 .product-tags a{color:#999;font-size:0.6em;	font-family: 'vinila', sans-serif;
 letter-spacing:0.2em;}
-.main{margin-top:20px;}
+.main{margin-top:80px;}
 .main>li{margin:20px 0;}
 
 /*GENERAL*/
@@ -148,13 +149,22 @@ letter-spacing:0.2em;}
 	}
 	
 /*HEADER*/
-header{margin-top:20px;}
+header{ 
+	width:100%;
+	background:#fff;
+	height:90px;
+	position:fixed;
+	z-index:9999 !important;
+	padding-top:15px;
+	}
 .home header{
 	position:absolute;
 	top:0;
 	left:0;
 	width:100%;
 	z-index:9999;
+
+	background:none !important;
 	}
 
 .nav{
@@ -185,7 +195,7 @@ header{margin-top:20px;}
 	}
 	
 /*FOOTER*/
-footer{margin-bottom:20px;}
+footer{padding-bottom:20px;}
 .home footer{
 	position:absolute;
 	bottom:15px;
@@ -286,8 +296,74 @@ footer{margin-bottom:20px;}
 
 .product-msg{display:none;}
 
+.controls select {
+	  font-family: 'vinila', sans-serif;
+	  font-weight:normal;
+	  color:#808080;
+      border: 0 !important;
+      background-position: 82px 7px;  
+      width: 100px; 
+	
+}
+
+.text-left p{text-align:left !important;}
+
+.price-and-purchase header{margin:0; padding-top:0;height:auto;z-index: 1 !important;}
+.guide{float:right;}
+
+/*FORMS*/
+.nl-cont{
+	clear: both;
+    text-align: center;
+    white-space: nowrap;
+	margin:20px 0;
+	}
+.newsletter{
+    border: 1px solid #e7e7e1;
+	display: inline-block;
+    vertical-align: middle;
+	width:350px;
+	text-align:center; }
+	
+.newsletter p{font-size:0.7em;height:0;margin:0;padding:0;}
 
 
+.newsletter input,.newsletter textarea {
+    background-color: #fff;
+    border: none;
+    color: #000000;
+    letter-spacing: 1px;
+    line-height: 12px;
+    margin: 0;
+    max-width: 100%;
+    padding: 9px 9px 5px !important;
+    text-rendering: optimizelegibility !important;
+    vertical-align: middle;
+	text-transform: uppercase;
+	float:left;
+}	
+.newsletter input[type="submit"]{
+	
+	 background: none repeat scroll 0 0 #fff;
+    border: 2px solid #000 !important;
+    border-radius: 0;
+    box-sizing: content-box;
+    color: #000;
+    cursor: pointer;
+    display: inline;
+    font-weight: 500;
+    height: auto;
+    letter-spacing: 3px !important;
+    margin: 0;
+    min-width: 130px;
+    padding: 11px 9px 7px;
+    text-align: center;
+    text-decoration: none !important;
+    text-rendering: optimizelegibility !important;
+    text-transform: uppercase;
+    vertical-align: middle;}
+
+/************************************************/
 
 .affix .logomenu img {
     display: block;
@@ -381,7 +457,7 @@ footer{margin-bottom:20px;}
     text-decoration: none;
 }
 .producto img {
-    box-shadow: 0 10px 9px -4px rgba(150, 150, 150, 0.1);
+    box-shadow:2px 2px 12px rgba(0, 0, 0, 0.1);
     height: auto;
     width: 100%;
 }
@@ -499,12 +575,7 @@ footer{margin-bottom:20px;}
     color: #808080;
     text-align: right;
 }
-.fik_add_cart select {
-    background: none repeat scroll 0 0 transparent;
-    border: 0 none;
-    border-radius: 0;
-    width: 75px;
-}
+
 .fik_product .entry-title {
     color: #ab2d2a;
     font-size: 25px;
@@ -599,7 +670,33 @@ footer .nav.f-menu > li > a {
     display: inline-block;
     padding-left: 0;
 }
-.newsletter > h3 {
-    display: none;
+
+
+@media (max-width: 320px) {
+	.objWrap h1{font-size:1.3em;}
+	.objWrap h2{font-size:0.8em;}
+	}
+
+/* Phone */
+@media (max-width: 640px) {
+body{font-size:90%;}
+.nav{text-align:center;margin:0 auto;padding-top:18px;}
+.nav li{float:none !important;}
+.fiklogo,.social,.nav-footer{margin-top:20px;text-align:center;}		
+.fiklogo {position: static;}
+.main li{margin: 150px 0;}
+.main:first-child,.main:last-child{margin: 0 !important;}
 }
+
+/* Tablet and PHone */
+@media (max-width:1000px) {
+	
+body{font-size:90%;}
+.nav{text-align:center;margin:0 auto;padding-top:18px;}
+.nav li{float:none !important;}
+.fiklogo,.social,.nav-footer{margin-top:20px;text-align:center;}		
+.fiklogo {position: static;}
+.nav li a{color:#fff !important;}
+}
+
 

@@ -6,16 +6,20 @@
  * Copyright 2014 Ben Plum; MIT Licensed 
  */ 
 
- 	.naver .naver-handle { color: #333; cursor: pointer; display: none; font-size: 14px; height: 30px; line-height: 28px; text-transform: uppercase;
+ 	.naver .naver-handle { color: #C43A3B; cursor: pointer; display: none; font-size: 0.8em; letter-spacing:0.1em;font-weight:600; height: 30px; line-height: 28px; text-transform: uppercase;
 	 	-webkit-user-select: none;
 		   -moz-user-select: none;
 		    -ms-user-select: none;
 		     -o-user-select: none;
 			    user-select: none;
  	}
- 	.naver .naver-handle:before { background: url(jquery.fs.naver-icon.png) no-repeat center; content: ''; display: block; float: left; height: 15px; margin: 7px 10px 0 0; width: 20px; }
+ 	.naver .naver-handle:before { background: url('../img/responsive-icon.png') no-repeat center; content: ''; display: block; float: left; height: 15px; margin: 7px 10px 0 0; width: 20px; }
  	.naver .naver-wrapper { height: auto; }
  	.naver .naver-container:after { clear: both; content: "."; display: block; height: 0; line-height: 0; visibility: hidden; }
 
-	.naver.enabled .naver-handle { display: block; }
-	.naver.enabled .naver-wrapper { height: 0px; overflow: hidden; }
+	.naver.enabled .naver-handle { display: block;position:fixed; top:20px; right:20px;}
+	.naver.enabled .naver-wrapper { height: 0px; overflow: hidden; position:fixed; top:90px; left:0;width:100%;font-size:0.8em;background:#922b2c;transition:all 1s ease;-moz-transition:all 1s ease;-webkit-transition:all 1s ease;}
+	.naver-wrapper ul{width:100%;text-align:center;}
+	.naver-container{height:50px !important;}
+	.naver-container ul li{display:block;}
+
