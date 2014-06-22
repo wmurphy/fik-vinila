@@ -17,8 +17,8 @@
  	.naver .naver-wrapper { height: auto; }
  	.naver .naver-container:after { clear: both; content: "."; display: block; height: 0; line-height: 0; visibility: hidden; }
 
-	.naver.enabled .naver-handle { display: block;position:fixed; top:20px; right:20px;}
-	.naver.enabled .naver-wrapper { height: 0px; overflow: hidden; position:fixed; top:90px; left:0;width:100%;font-size:0.8em;background:#922b2c;transition:all 1s ease;-moz-transition:all 1s ease;-webkit-transition:all 1s ease;}
+	.naver.enabled .naver-handle { display: block;}
+	.naver.enabled .naver-wrapper { height: 0px; overflow: hidden; position:fixed; top:90px; left:0;width:100%;font-size:0.8em;background:#922b2c;transition:all 0.5s ease;-moz-transition:all 0.5s ease;-webkit-transition:all 0.5s ease;}
 	.naver-wrapper ul{width:100%;text-align:center;}
 	.naver-container{height:50px !important;}
 	.naver-container ul li{display:block;}
