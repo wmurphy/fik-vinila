@@ -24,7 +24,7 @@
 			closed: "Menu",
 			open: "Cerrar"
 		},
-		maxWidth: "980px"
+		maxWidth: "992px"
 	};
 
 	/**
