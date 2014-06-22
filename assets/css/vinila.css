@@ -153,6 +153,13 @@ letter-spacing:0.2em;}
 	}
 	
 /*HEADER*/
+header.banner {
+    background-color: #fff;
+}
+body.home header.banner {
+    background-color: transparent;
+}
+
 
 .nav{
 	margin: 20px 0 0 0;
