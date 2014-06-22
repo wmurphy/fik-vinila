@@ -690,6 +690,10 @@ footer .nav.f-menu > li > a {
 
 /* Medium devices (desktops, 992px and down) */
 @media (max-width: 992px) {
+    .nav{text-align:center;margin:0 auto;padding-top:18px;}
+    .nav li{float:none !important;}
+    .slider-nav {display:none;}
+
     .nav-main{
         float:right !important;
         width:120px;
@@ -705,9 +709,6 @@ footer .nav.f-menu > li > a {
         padding-right: 0;
         width: auto;
     }
-    .nav{text-align:center;margin:0 auto;padding-top:18px;}
-    .nav li{float:none !important;}
-    .slider-nav {display:none;}
 
     body{font-size:90%;}
     .fiklogo,.social,.nav-footer{margin-top:20px;text-align:center;}        
