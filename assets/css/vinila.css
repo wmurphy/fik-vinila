@@ -128,7 +128,11 @@ letter-spacing:0.2em;}
 
 /*GENERAL*/
 
-.logo{width:210px;height:61px;}
+.logo{
+    max-width: 210px;
+    height: auto;
+    width: 100%;
+}
 
 .navbar-default{
 	background:none !important;
@@ -149,23 +153,6 @@ letter-spacing:0.2em;}
 	}
 	
 /*HEADER*/
-header{ 
-	width:100%;
-	background:#fff;
-	height:90px;
-	position:fixed;
-	z-index:9999 !important;
-	padding-top:15px;
-	}
-.home header{
-	position:absolute;
-	top:0;
-	left:0;
-	width:100%;
-	z-index:9999;
-
-	background:none !important;
-	}
 
 .nav{
 	margin: 20px 0 0 0;
@@ -192,7 +179,11 @@ header{
 	text-decoration:none;
 	background-color:transparent;
 	cursor:not-allowed
-	}
+}
+
+.bolsa {
+    float: right;
+}
 	
 /*FOOTER*/
 footer{padding-bottom:20px;}
@@ -384,18 +375,13 @@ footer{padding-bottom:20px;}
     opacity: 1;
 }
 
-.bolsa {
-    float: left;
-}
-.bolsa .menu-bag li {
-    float: right;
-}
 .bolsa .menu-bag li a {
     background: url("../img/bagnew.png") no-repeat scroll left center transparent;
     color: #000;
     display: inline-block;
     font-family: 'vinila';
-    padding-left: 18px;
+    padding-left: 19px;
+    padding-right: 0;
     text-transform: uppercase;
 }
 .lang li a:hover, .f-menu li a:hover {
@@ -687,26 +673,51 @@ footer .nav.f-menu > li > a {
 
 
 @media (max-width: 320px) {
-	.objWrap h1{font-size:1.3em;}
-	.objWrap h2{font-size:0.8em;}
-	}
+    .objWrap h1{font-size:1.3em;}
+    .objWrap h2{font-size:0.8em;}
+    }
 
 /* Phone */
 @media (max-width: 640px) {
-.main li{margin: 150px 0;}
-.main:first-child,.main:last-child{margin: 0 !important;}
+    .main li{margin: 150px 0;}
+    .main:first-child,.main:last-child{margin: 0 !important;}
 }
 
-/* Tablet and PHone */
-@media (max-width:960px) {
-	
-body{font-size:90%;}
-.nav{text-align:center;margin:0 auto;padding-top:18px;}
-.nav li{float:none !important;}
-.fiklogo,.social,.nav-footer{margin-top:20px;text-align:center;}		
-.fiklogo {position: static;}
-.nav li a{color:#fff !important;}
-.slider-nav {display:none;}
+/* Small devices (tablets, 768px and down) */
+@media (max-width: 768px) {
+
+}
+
+/* Medium devices (desktops, 992px and down) */
+@media (max-width: 992px) {
+    .nav-main{
+        float:right !important;
+        width:120px;
+        padding-top: 9px;
+    }
+    .naver-container li a{
+        color:#fff !important;
+    }
+    ul#menu-cart {
+        padding-top: 10px;
+    }
+    div.bolsa{
+        padding-right: 0;
+        width: auto;
+    }
+    .nav{text-align:center;margin:0 auto;padding-top:18px;}
+    .nav li{float:none !important;}
+    .slider-nav {display:none;}
+
+    body{font-size:90%;}
+    .fiklogo,.social,.nav-footer{margin-top:20px;text-align:center;}        
+    .fiklogo {position: static;}
+
+}
+
+/* Large devices (large desktops, 1200px and down) */
+@media (max-width: 1200px) {
+
 }
 
 
