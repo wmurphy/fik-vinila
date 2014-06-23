@@ -387,7 +387,7 @@ footer{padding-bottom:20px;}
     color: #000;
     display: inline-block;
     font-family: 'vinila';
-    padding-left: 19px;
+    padding-left: 17px;
     padding-right: 0;
     text-transform: uppercase;
 }
@@ -684,6 +684,18 @@ footer .nav.f-menu > li > a {
     .objWrap h2{font-size:0.8em;}
     }
 
+@media (max-width: 480px) {
+    a.logoheader {
+        background: url("../img/symbol.png") 0 0 /  50px 50px repeat no-repeat;     
+        height: 50px;
+        width: 50px;
+        display: block;
+    }
+    .logo{
+        display: none;
+    }
+}
+
 /* Phone */
 @media (max-width: 640px) {
     .main li{margin: 150px 0;}
@@ -714,6 +726,7 @@ footer .nav.f-menu > li > a {
     }
     div.bolsa{
         padding-right: 0;
+        padding-left: 0;
         width: auto;
     }
 
