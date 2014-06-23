@@ -698,7 +698,6 @@ footer .nav.f-menu > li > a {
 
 /* Phone */
 @media (max-width: 640px) {
-    .main li{margin: 150px 0;}
     .main:first-child,.main:last-child{margin: 0 !important;}
 }
 
