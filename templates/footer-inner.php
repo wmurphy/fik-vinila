@@ -1,4 +1,4 @@
-<footer class="content-info" role="contentinfo">
+<footer class="inner-footer content-info" role="contentinfo">
 	<div class="container">
     	<div class="col-xs-12">
 		<?php

@@ -234,6 +234,7 @@ footer{padding-bottom:20px;}
 	color:#C43A3B;
 	}
 
+.inner-footer .fiklogo, .inner-footer .social, .inner-footer .footer{margin-top:20px;text-align:center;}
 
 /*SOCIAL ICONS*/
 
@@ -792,7 +793,7 @@ footer .nav.f-menu > li > a {
     }
 
     body{font-size:90%;}
-    .fiklogo,.social,.nav-footer{margin-top:20px;text-align:center;}        
+    .inner-footer .fiklogo, .inner-footer .social, .inner-footer .footer, .fiklogo, .social, .nav-footer{margin-top:20px;text-align:center;}
     .fiklogo {position: static;}
 
 }
