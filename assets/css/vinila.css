@@ -236,7 +236,8 @@ footer{padding-bottom:20px;}
 
 .inner-footer .fiklogo, .inner-footer .social, .inner-footer .nav-footer{margin-top:20px;text-align:center;}
 
-.widget_ns_mailchimp{ display: none;}
+.widget_ns_mailchimp{ display: none !important;}
+
 /*SOCIAL ICONS*/
 
 .social li {
