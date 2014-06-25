@@ -29,4 +29,24 @@
     
 </footer>
 
+<?php
+if (is_front_page()){
+	?>
+<div class="popup">
+<div id="overlay"></div>
+<div id="popup">
+	<div class="content">
+    <img src="<?php echo get_template_directory_uri() . '/assets/img/' ?>logo_HOME.png"/>
+	<h1>¡Vinila Fabrics te lleva el probador a casa!</h1>
+    <p>Recuerda que <span>las devoluciones y cambios son gratuitos*</span>, si tienes cualquier problema con la talla o el modelo, te lo cambiamos en 24h sin ningún coste adicional para ti.</p>
+    <p>100% Vinila Fabrics®<br/>100% hecho en España para llenar tu mundo de color</p>
+	<a class="closepopup">Ir a la Tienda</a>
+    </div>
+    </div>
+</div>
+	<?php
+}
+?>
+
+
 <?php wp_footer(); ?>

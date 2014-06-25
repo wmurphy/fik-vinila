@@ -158,5 +158,9 @@ jQuery(document).ready(function() {
     }
     );
 
+    jQuery( ".closepopup" ).click(function() {
+        jQuery('.popup').remove();
+    });
+
 });
 
