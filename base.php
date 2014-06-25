@@ -32,9 +32,14 @@
   </div><!-- /.wrap -->
 
 <?php endif;?>
-
   <?php
+
+//var_dump(is_front_page());
+  if(is_front_page()){
     do_action('get_footer', $footer_template_name);
+  }else{
+    do_action('get_footer', 'footer-inner');
+  }
   ?>
 
 </body>
