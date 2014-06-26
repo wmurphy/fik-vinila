@@ -8,7 +8,7 @@
     	?>
 	    </div>
 
-	    <div class="col-xs-12">
+	    <div class="col-xs-12 nl">
 	    <?php dynamic_sidebar('sidebar-news'); ?>
 		</div>
 		

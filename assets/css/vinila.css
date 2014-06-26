@@ -233,7 +233,7 @@ footer{padding-bottom:20px;}
 	color:#C43A3B;
 	}
 
-.inner-footer .fiklogo, .inner-footer .social, .inner-footer .nav-footer{margin-top:20px;text-align:center;}
+.inner-footer .fiklogo, .inner-footer .social, .inner-footer .nav-footer{margin-top:0px;text-align:center;}
 
 .widget_ns_mailchimp{ display: none !important;}
 
@@ -312,6 +312,11 @@ footer{padding-bottom:20px;}
 .guide{float:right;}
 
 /*FORMS*/
+.nl{
+	margin: 10px 0;
+    padding: 0;
+    text-align: center;
+	}
 .nl-cont{
 	clear: both;
     text-align: center;
@@ -319,49 +324,51 @@ footer{padding-bottom:20px;}
 	margin:20px 0;
 	}
 .newsletter{
-    border: 1px solid #e7e7e1;
+    border:none;
 	display: inline-block;
     vertical-align: middle;
 	width:350px;
-	text-align:center; }
+	text-align:center;
+	margin:10px auto; }
 	
-.newsletter p{font-size:0.7em;height:0;margin:0;padding:0;}
+.newsletter p{font-size:0.7em;height:0;margin:0;padding:0;display:inline;}
 
 
-.newsletter input,.newsletter textarea {
-    background-color: #fff;
-    border: none;
+.newsletter input, .newsletter textarea {
+    background-color: #eee;
+    border:none;
     color: #000000;
     letter-spacing: 1px;
-    line-height: 12px;
+    line-height: 14px;
     margin: 0;
     max-width: 100%;
     padding: 9px 9px 5px !important;
     text-rendering: optimizelegibility !important;
+    text-transform: uppercase;
     vertical-align: middle;
-	text-transform: uppercase;
-	float:left;
+	display: inline;
+
 }	
-.newsletter input[type="submit"]{
-	
-	 background: none repeat scroll 0 0 #fff;
-    border: 2px solid #000 !important;
+.newsletter input[type="submit"] {
+    background: none repeat scroll 0 0 #922b2c;
+    border: 0 solid #000 !important;
     border-radius: 0;
     box-sizing: content-box;
-    color: #000;
+    color: #fff;
     cursor: pointer;
     display: inline;
     font-weight: 500;
     height: auto;
     letter-spacing: 3px !important;
     margin: 0;
-    min-width: 130px;
+    min-width: 103px;
     padding: 11px 9px 7px;
     text-align: center;
     text-decoration: none !important;
     text-rendering: optimizelegibility !important;
     text-transform: uppercase;
-    vertical-align: middle;}
+    vertical-align: middle;
+}
 
 /* CONTACT PAGE */
 .contacto .main{
