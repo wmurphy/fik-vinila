@@ -65,7 +65,7 @@ table {
     font-family: 'vinilabold';
     src: url('../fonts/leelawdb.eot');
     src: url('../fonts/leelawdb.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/leelawdb-webfont.woff') format('woff'),
+         url('../fonts/leelawdb.woff') format('woff'),
          url('../fonts/leelawdb.ttf') format('truetype'),
          url('../fonts/leelawdb.svg#leelawadeebold') format('svg');
     font-weight: normal;
