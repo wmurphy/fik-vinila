@@ -38,15 +38,17 @@ function roots_scripts() {
   wp_enqueue_style('responsive_menu_styles', get_template_directory_uri() . '/assets/css/jquery.fs.naver.css', false, null);
 
   wp_register_script('fik_common', get_template_directory_uri() . '/assets/js/common.js');
-  wp_register_script('fik_product_js', get_template_directory_uri() . '/assets/js/fik_product.js', array(), null, false);
   wp_enqueue_script('fik_common');
-  wp_enqueue_script('fik_product_js');
+
   if ( 'fik_product' == get_post_type() ){ 
     wp_register_script('elevateZoom', get_template_directory_uri() . '/assets/js/jquery.elevateZoom.min.js', array(), null, false);
     wp_enqueue_script('elevateZoom');
 
     wp_register_script('zoom', get_template_directory_uri() . '/assets/js/zoom.js', array(), null, false);
     wp_enqueue_script('zoom');
+    wp_register_script('fik_product_js', get_template_directory_uri() . '/assets/js/fik_product.js', array(), null, false);
+
+    wp_enqueue_script('fik_product_js');
 	
 	
   }
