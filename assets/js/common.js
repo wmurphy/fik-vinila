@@ -163,7 +163,7 @@ jQuery(document).ready(function() {
     });
 
 
-    var glide = jQuery('.slider').glide({
+    jQuery('.slider').glide({
         afterTransition: function() {
             var currentSlide = this.currentSlide;
         }
