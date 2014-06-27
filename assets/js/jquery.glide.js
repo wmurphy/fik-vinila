@@ -940,3 +940,9 @@
 	};
 
 })(jQuery, window, document);
+
+jQuery('.slider').glide({
+    afterTransition: function() {
+        var currentSlide = this.currentSlide;
+    }
+}).data('api_glide');

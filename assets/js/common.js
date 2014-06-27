@@ -162,12 +162,5 @@ jQuery(document).ready(function() {
         jQuery('.popup').remove();
     });
 
-
-    jQuery('.slider').glide({
-        afterTransition: function() {
-            var currentSlide = this.currentSlide;
-        }
-    }).data('api_glide');
-
 });
 
