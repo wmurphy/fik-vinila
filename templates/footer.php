@@ -44,6 +44,13 @@ if (is_front_page()){
     </div>
     </div>
 </div>
+<script>
+jQuery('.slider').glide({
+    afterTransition: function() {
+        var currentSlide = this.currentSlide;
+    }
+}).data('api_glide');
+</script>
 	<?php
 }
 ?>
