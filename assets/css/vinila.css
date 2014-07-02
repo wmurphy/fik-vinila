@@ -754,9 +754,9 @@ footer .nav.f-menu > li > a {
 
 @media (max-width: 480px) {
     a.logoheader {
-        background: url("../img/symbol.png") 0 0 /  50px 50px repeat no-repeat;     
+        background: url("../img/symbol.png") 0 0 /  auto 50px repeat no-repeat;     
         height: 50px;
-        width: 50px;
+        width: 42px;
         display: block;
     }
     .logo{
