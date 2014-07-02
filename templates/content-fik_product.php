@@ -31,8 +31,6 @@
             </div>
             <?php the_product_gallery_thumbnails('300-thumbnail'); ?>
         <?php endif; ?>
-        <h3>Te puede interesar</h3>
-        <hr>
         
         </div>
         
