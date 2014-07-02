@@ -751,7 +751,7 @@ footer .nav.f-menu > li > a {
 }
 
 @media (max-width: 320px) {
-    .home #menu-footer-menu-vinila{display:none;}
+    .home footer{display:none;}
 }
 
 @media (max-width: 480px) {
@@ -766,7 +766,7 @@ footer .nav.f-menu > li > a {
     }
 	.objWrap h1{font-size:1.3em;}
     .objWrap h2{font-size:0.8em;}
-    .home #menu-footer-menu-vinila{ display:none; }
+    .home footer{ display:none; }
 }
 
 /* Phone */
