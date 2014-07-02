@@ -752,7 +752,10 @@ footer .nav.f-menu > li > a {
 
 @media (max-width: 320px) {
     .home footer{display:none;}
+    .container{padding-left: 0 !important; padding-right: 0 !important;}
     .thumbnail{margin: 10px 0}
+    .content{padding:0 !important;}
+    .fik_product .entry-title{font-size:17px !important;}
 }
 
 @media (max-width: 480px) {
