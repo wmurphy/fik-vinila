@@ -606,8 +606,14 @@ footer{padding-bottom:20px;}
     font-size: 25px;
     padding: 0;
     text-align: right;
-    width: 50%;
 }
+
+del .price {
+    text-decoration: line-through;
+    font-size: 22px;
+    color: #c1c1c1;
+}
+
 .fik_product .price .amount {
     color: #808080;
     font-size: 25px;

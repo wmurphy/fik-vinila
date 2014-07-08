@@ -41,6 +41,7 @@
             </header>
             <div class="col-sm-6">
                 <?php the_fik_price(); ?>
+                <del><?php the_fik_previous_price(); ?></del>
             </div>
             <div class="col-xs-6 ref">
                 <div class="product-sku"><?php print fik_product_sku(); ?></div>
