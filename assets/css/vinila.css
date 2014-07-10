@@ -612,7 +612,6 @@ del .highPrice {
     text-decoration: line-through;
     font-size: 22px;
     color: #c1c1c1;
-    float: right;
 }
 
 .fik2012-thumb-sq del .highPrice,   .fik2012-thumb-sq del .highPrice .amount{ 
