@@ -608,11 +608,12 @@ footer{padding-bottom:20px;}
     text-align: right;
 }
 
-del .price {
+del .highPrice {
     text-decoration: line-through;
     font-size: 22px;
     color: #c1c1c1;
 }
+
 
 .fik_product .price .amount {
     color: #808080;
