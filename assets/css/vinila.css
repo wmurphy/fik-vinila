@@ -614,6 +614,10 @@ del .highPrice {
     color: #c1c1c1;
 }
 
+.fik2012-thumb-sq del .highPrice,   .fik2012-thumb-sq del .highPrice .amount{ 
+    font-size: 16px;
+}
+
 
 .fik_product .price .amount {
     color: #808080;
