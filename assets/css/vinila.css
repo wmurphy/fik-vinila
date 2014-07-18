@@ -618,6 +618,7 @@ footer{padding-bottom:20px;}
 }
 .producto .product-description .product-price .amount, .producto .product-description .product-price .price {
     font-size: 16px;
+    color: #fff;
 }
 .product-tags {
    
@@ -654,12 +655,13 @@ footer{padding-bottom:20px;}
 del .highPrice {
     text-decoration: line-through;
     font-size: 22px;
-    color: #c1c1c1;
+    color: #fff;
+    display: block;
 }
 
 .fik2012-thumb-sq del .highPrice,   .fik2012-thumb-sq del .highPrice .amount{ 
     font-size: 16px;
-    color: #c1c1c1;
+    color: #fff;
 }
 
 
