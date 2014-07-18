@@ -133,15 +133,16 @@ span.product-description span {
 }
 
 span.product-description {
-  background: rgba(0,0,0,0.5);
+  background: rgba(196,58,59,0.5);
   color: white;
   cursor: pointer;
   display: table;
   height: 150px;
   left: 0;
   position: absolute;
-  top: 0;
-  width: 150px;
+  bottom: 0;
+  width: 100%;
+  margin: 15px;
   opacity: 0;
 }
   
@@ -162,7 +163,7 @@ ul.product-list li:hover span.product-description {
 	color:#999;
 	letter-spacing:normal;
 	}
-.product-description {margin:15px 0;}	
+
 
 .product-tags a{color:#999;font-size:0.6em;	font-family: 'vinila', sans-serif;
 letter-spacing:0.2em;}
@@ -624,10 +625,7 @@ footer{padding-bottom:20px;}
 .product-tags a {
     color: #808080;
 }
-.product-description {
-    margin-top: 30px;
-    text-align: right;
-}
+
 .product-description .product-price .amount, .product-description .product-price .price {
     color: #808080;
     font-family: 'vinila';
