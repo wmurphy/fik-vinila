@@ -107,6 +107,10 @@ a:hover{
 	color:#922b2c;
 	}
 	
+b, strong {
+  font-weight: bold !important;
+}
+
 .product-title{
 	font-size:1.5em;
 	font-weight:normal;
