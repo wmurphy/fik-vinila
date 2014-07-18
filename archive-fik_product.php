@@ -7,9 +7,11 @@
   <?php get_search_form(); ?>
 <?php endif; ?>
 
+<ul class="product-list">
 <?php while (have_posts()) : the_post(); ?>
   <?php get_template_part('templates/content', get_post_type()); ?>
 <?php endwhile; ?>
+</ul>
 
 <?php if ($wp_query->max_num_pages > 1) : ?>
   <nav class="post-nav">
