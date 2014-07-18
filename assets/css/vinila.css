@@ -605,8 +605,10 @@ footer{padding-bottom:20px;}
 }
 .producto h2.product-title {
     font-size: 18px !important;
-    margin-top: 0;
+    margin-top: 20px;
     padding-top: 0;
+    display: block;
+    text-align: center;
 }
 .producto .product-sku {
     color: #ab2d2a;
@@ -629,7 +631,7 @@ footer{padding-bottom:20px;}
     color: #808080;
     font-family: 'vinila';
     font-size: 21px;
-    text-align: right;
+
     width: 100%;
 }
 .product-gallery {
