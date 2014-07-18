@@ -110,6 +110,45 @@ a:hover{
 b, strong {
   font-weight: bold !important;
 }
+p{
+    margin: 0 0 10px;
+}
+
+ul.product-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+  
+ul.product-list li {
+  display: inline-block;
+  position: relative;
+}
+  
+span.product-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+span.product-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+  opacity: 0;
+}
+  
+ul.product-list li:hover span.product-content {
+  opacity: 1;
+}
+
 
 .product-title{
 	font-size:1.5em;
