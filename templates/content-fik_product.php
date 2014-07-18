@@ -3,16 +3,13 @@
         <li class="col-sm-4 producto <?php echo get_theme_mod( 'fik_product_thumb_type', 'fik2012-thumb-sq' ); ?>">
             <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                 <?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'vinlia-square'); } ?>           
-                <div class="product-description row">
-                    <div class="col-xs-6 pull-right">
+                <span class="product-description">
                         <h2 class="product-title"><?php the_title(); ?></h2>
-                        <div class="product-price"><?php the_fik_price(); ?><?php the_fik_previous_price(); ?></div>
-                    </div>
-                    <div class="col-xs-6">
-                        <div class="product-sku"><?php print fik_product_sku(); ?></div>
-                        <div class="product-tags"><?php echo strtolower(get_the_term_list($post->ID, 'store-section', '', ', ', '' )); ?></div>
-                    </div>
-                </div>
+                        <span class="product-price">
+                            <?php the_fik_price(); ?>
+                            <?php the_fik_previous_price(); ?>
+                        </span>
+                </span>
             </a>
         </li>
 
